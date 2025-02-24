@@ -16,5 +16,5 @@ The documentation is generated and auto-deployed to GitHub Pages, ensuring that 
 ### Links
 
 * [PropertyTycoon Repository](https://github.com/jude-james/PropertyTycoon)
-* [GitHub Pages](https://propertytycoondocs.github.io)
+* [GitHub Pages](https://rshah713.github.io/PropertyTycoonDocs/)
 
