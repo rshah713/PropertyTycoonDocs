@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['takemoney_0',['TakeMoney',['../class_player.html#aeb70c057f576632910267908aeaa0c95',1,'Player']]]
+  ['endturn_0',['EndTurn',['../class_board.html#a01c389b01107f7aaa5cf1270e65cda3d',1,'Board']]]
 ];

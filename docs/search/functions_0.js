@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['givemoney_0',['GiveMoney',['../class_player.html#a4dfdd032abf083ff9ecebc859785a0bf',1,'Player']]]
+  ['animatediceroll_0',['AnimateDiceRoll',['../class_u_i_manager.html#ab51e3fe2a9468d3d3bdffd21ce17b312',1,'UIManager']]]
 ];

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['bank_0',['Bank',['../class_bank.html',1,'']]],
-  ['board_1',['Board',['../class_board.html',1,'']]],
-  ['bot_2',['Bot',['../class_bot.html',1,'']]]
+  ['animatediceroll_0',['AnimateDiceRoll',['../class_u_i_manager.html#ab51e3fe2a9468d3d3bdffd21ce17b312',1,'UIManager']]]
 ];

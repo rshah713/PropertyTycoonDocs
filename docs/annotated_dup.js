@@ -1,13 +1,12 @@
 var annotated_dup =
 [
-    [ "Bank", "class_bank.html", null ],
-    [ "Board", "class_board.html", null ],
+    [ "Bank", "class_bank.html", "class_bank" ],
+    [ "Board", "class_board.html", "class_board" ],
     [ "Bot", "class_bot.html", null ],
-    [ "DataReader", "class_data_reader.html", null ],
+    [ "DataReader", "class_data_reader.html", "class_data_reader" ],
     [ "Human", "class_human.html", null ],
     [ "Menu", "class_menu.html", null ],
-    [ "MenuPlayer", "class_menu_player.html", null ],
+    [ "MenuPlayer", "class_menu_player.html", "class_menu_player" ],
     [ "Player", "class_player.html", "class_player" ],
-    [ "Singleton< T >", "class_singleton-1-g.html", null ],
-    [ "UIManager", "class_u_i_manager.html", null ]
+    [ "UIManager", "class_u_i_manager.html", "class_u_i_manager" ]
 ];
