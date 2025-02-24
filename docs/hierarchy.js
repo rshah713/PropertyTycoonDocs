@@ -8,10 +8,10 @@ var hierarchy =
       [ "Player", "class_player.html", [
         [ "Bot", "class_bot.html", null ],
         [ "Human", "class_human.html", null ]
-      ] ],
-      [ "Singleton< T >", "class_singleton-1-g.html", [
-        [ "Board", "class_board.html", null ],
-        [ "UIManager", "class_u_i_manager.html", null ]
       ] ]
+    ] ],
+    [ "Singleton", null, [
+      [ "Board", "class_board.html", null ],
+      [ "UIManager", "class_u_i_manager.html", null ]
     ] ]
 ];
