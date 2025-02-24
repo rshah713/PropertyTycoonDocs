@@ -1,0 +1,24 @@
+var NAVTREEINDEX0 =
+{
+"annotated.html":[0,0],
+"class_bank.html":[0,0,0],
+"class_board.html":[0,0,1],
+"class_bot.html":[0,0,2],
+"class_data_reader.html":[0,0,3],
+"class_human.html":[0,0,4],
+"class_menu.html":[0,0,5],
+"class_menu_player.html":[0,0,6],
+"class_player.html":[0,0,7],
+"class_player.html#a0997c43b7669d5a4b0a15b8f71073c99":[0,0,7,1],
+"class_player.html#a19181efda3bd95fc43e7a911029dce11":[0,0,7,2],
+"class_player.html#a4dfdd032abf083ff9ecebc859785a0bf":[0,0,7,0],
+"class_player.html#aeb70c057f576632910267908aeaa0c95":[0,0,7,3],
+"class_singleton-1-g.html":[0,0,8],
+"class_u_i_manager.html":[0,0,9],
+"classes.html":[0,1],
+"functions.html":[0,3,0],
+"functions_func.html":[0,3,1],
+"hierarchy.html":[0,2],
+"index.html":[],
+"pages.html":[]
+};
