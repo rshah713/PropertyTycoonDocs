@@ -1,0 +1,139 @@
+\doxysection{Bot Class Reference}
+\hypertarget{class_bot}{}\label{class_bot}\index{Bot@{Bot}}
+
+
+AI Agent inherited from player class. Makes its own moves and decisions.  
+
+
+Inheritance diagram for Bot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_bot}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_bot_a8bae3bee44f0f9f21c74eac4ae62df51}{For\+Sale\+Decision}} (Property property)
+\begin{DoxyCompactList}\small\item\em Decision point for purchasing a property, shows for sale prompt and disables buttons accordingly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_player}{Player}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Start\+Turn} ()
+\begin{DoxyCompactList}\small\item\em Starts the player\textquotesingle{}s turn, setting them as the active player and updating the UI. \end{DoxyCompactList}\item 
+void {\bfseries Complete\+Turn} ()
+\begin{DoxyCompactList}\small\item\em Called once tile functionality is complete and either ends the turn or allows for another turn. \end{DoxyCompactList}\item 
+void {\bfseries Go\+To\+Jail} ()
+\begin{DoxyCompactList}\small\item\em Sends the player to the Jail position and ends their turn. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a4dfdd032abf083ff9ecebc859785a0bf}{Give\+Money}} (int amount)
+\begin{DoxyCompactList}\small\item\em Gives the player a specified amount of money. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_aeb70c057f576632910267908aeaa0c95}{Take\+Money}} (int amount)
+\begin{DoxyCompactList}\small\item\em Takes a specified amount of money from the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a0997c43b7669d5a4b0a15b8f71073c99}{Set\+Sprite}} (Sprite sprite)
+\begin{DoxyCompactList}\small\item\em Sets the sprite for the player game object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_bot_ac03e78a8a904d865bd3e9073ebfcac28}{Roll\+Dice\+Decision}} ()
+\begin{DoxyCompactList}\small\item\em Decision point for rolling dice. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_bot_a64e896d462f9828237e0c3f9c7dcb1b0}{End\+Turn\+Decision}} ()
+\begin{DoxyCompactList}\small\item\em Decision point for ending turn. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_bot_af023f860f23bb3569b053a49c1e61bbf}{In\+Jail\+Decision}} ()
+\begin{DoxyCompactList}\small\item\em Decision point for in jail, shows jail prompt and disables buttons accordingly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_player}{Player}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries On\+Roll\+Dice} ()
+\begin{DoxyCompactList}\small\item\em Handles the rolling of dice and the action to take depending on the dice roll. \end{DoxyCompactList}\item 
+void {\bfseries On\+End\+Turn} ()
+\begin{DoxyCompactList}\small\item\em Handles the player\textquotesingle{}s turn ending and signaling the board to end the turn. \end{DoxyCompactList}\item 
+void {\bfseries On\+Post\+Bail} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_player}{Player} pays fine and leaves jail. \end{DoxyCompactList}\item 
+void {\bfseries On\+Get\+Out\+Of\+Jail\+Free} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_player}{Player} uses get out of jail card and leaves jail. \end{DoxyCompactList}\item 
+void {\bfseries On\+Remain\+In\+Jail} ()
+\item 
+void {\bfseries On\+Buy} ()
+\begin{DoxyCompactList}\small\item\em Buys the property that the player is currently on. \end{DoxyCompactList}\item 
+void {\bfseries On\+Auction} ()
+\begin{DoxyCompactList}\small\item\em Auctions the property that the player is currently on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_player}{Player}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int {\bfseries Dice\+Roll}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+AI Agent inherited from player class. Makes its own moves and decisions. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_bot_a64e896d462f9828237e0c3f9c7dcb1b0}\index{Bot@{Bot}!EndTurnDecision@{EndTurnDecision}}
+\index{EndTurnDecision@{EndTurnDecision}!Bot@{Bot}}
+\doxysubsubsection{\texorpdfstring{EndTurnDecision()}{EndTurnDecision()}}
+{\footnotesize\ttfamily \label{class_bot_a64e896d462f9828237e0c3f9c7dcb1b0} 
+override void Bot.\+End\+Turn\+Decision (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Decision point for ending turn. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_player_a27b1dfb479ad88f091e5239186e5c881}{Player}}.
+
+\Hypertarget{class_bot_a8bae3bee44f0f9f21c74eac4ae62df51}\index{Bot@{Bot}!ForSaleDecision@{ForSaleDecision}}
+\index{ForSaleDecision@{ForSaleDecision}!Bot@{Bot}}
+\doxysubsubsection{\texorpdfstring{ForSaleDecision()}{ForSaleDecision()}}
+{\footnotesize\ttfamily \label{class_bot_a8bae3bee44f0f9f21c74eac4ae62df51} 
+override void Bot.\+For\+Sale\+Decision (\begin{DoxyParamCaption}\item[{Property}]{property}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Decision point for purchasing a property, shows for sale prompt and disables buttons accordingly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em property} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_player_ae0174c8c1a84172677a86a0ae9dd0d3c}{Player}}.
+
+\Hypertarget{class_bot_af023f860f23bb3569b053a49c1e61bbf}\index{Bot@{Bot}!InJailDecision@{InJailDecision}}
+\index{InJailDecision@{InJailDecision}!Bot@{Bot}}
+\doxysubsubsection{\texorpdfstring{InJailDecision()}{InJailDecision()}}
+{\footnotesize\ttfamily \label{class_bot_af023f860f23bb3569b053a49c1e61bbf} 
+override void Bot.\+In\+Jail\+Decision (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Decision point for in jail, shows jail prompt and disables buttons accordingly. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_player_a00e50369e1e1f18f0e028092a392e512}{Player}}.
+
+\Hypertarget{class_bot_ac03e78a8a904d865bd3e9073ebfcac28}\index{Bot@{Bot}!RollDiceDecision@{RollDiceDecision}}
+\index{RollDiceDecision@{RollDiceDecision}!Bot@{Bot}}
+\doxysubsubsection{\texorpdfstring{RollDiceDecision()}{RollDiceDecision()}}
+{\footnotesize\ttfamily \label{class_bot_ac03e78a8a904d865bd3e9073ebfcac28} 
+override void Bot.\+Roll\+Dice\+Decision (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Decision point for rolling dice. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_player_ac91422d9704dd40c598c90035bbd5389}{Player}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/Bot.\+cs\end{DoxyCompactItemize}

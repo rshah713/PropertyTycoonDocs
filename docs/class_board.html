@@ -104,6 +104,7 @@ $(function(){initNavTree('class_board.html',''); initResizable(true); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="class_board-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Board Class Reference</div></div>
@@ -112,6 +113,12 @@ $(function(){initNavTree('class_board.html',''); initResizable(true); });
 
 <p>Property Tycoon board, acts as a game manager. Tracks board tiles, bank, cards, and players.  
  <a href="#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for Board:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_board.png" alt=""/>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -120,11 +127,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>EndTurn</b> ()</td></
 <tr class="memdesc:a01c389b01107f7aaa5cf1270e65cda3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends the current player's turn and starts the next player's turn. <br /></td></tr>
 <tr class="separator:a01c389b01107f7aaa5cf1270e65cda3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a49e14a13cc2d2e4a2ff2d97ea64a53bb" id="r_a49e14a13cc2d2e4a2ff2d97ea64a53bb"><td class="memItemLeft" align="right" valign="top"><a id="a49e14a13cc2d2e4a2ff2d97ea64a53bb" name="a49e14a13cc2d2e4a2ff2d97ea64a53bb"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>justVisitingIndex</b> = 10</td></tr>
+<tr class="separator:a49e14a13cc2d2e4a2ff2d97ea64a53bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4877360c9aa953afa34009a8de347539" id="r_a4877360c9aa953afa34009a8de347539"><td class="memItemLeft" align="right" valign="top"><a id="a4877360c9aa953afa34009a8de347539" name="a4877360c9aa953afa34009a8de347539"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>goIndex</b> = 0</td></tr>
+<tr class="separator:a4877360c9aa953afa34009a8de347539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
+<tr class="memitem:a2277f42440b07888d2b7cdb2102f5c5c" id="r_a2277f42440b07888d2b7cdb2102f5c5c"><td class="memItemLeft" align="right" valign="top"><a id="a2277f42440b07888d2b7cdb2102f5c5c" name="a2277f42440b07888d2b7cdb2102f5c5c"></a>
+Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>JailPosition</b><code> [get]</code></td></tr>
+<tr class="separator:a2277f42440b07888d2b7cdb2102f5c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a86c045a9e0d2bdafe4e7d56735184c" id="r_a2a86c045a9e0d2bdafe4e7d56735184c"><td class="memItemLeft" align="right" valign="top"><a id="a2a86c045a9e0d2bdafe4e7d56735184c" name="a2a86c045a9e0d2bdafe4e7d56735184c"></a>
 List&lt; Tile &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Tiles</b><code> [get]</code></td></tr>
 <tr class="separator:a2a86c045a9e0d2bdafe4e7d56735184c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955b9e9768a159c9371a28bc4fb43bb8" id="r_a955b9e9768a159c9371a28bc4fb43bb8"><td class="memItemLeft" align="right" valign="top"><a id="a955b9e9768a159c9371a28bc4fb43bb8" name="a955b9e9768a159c9371a28bc4fb43bb8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>FreeParkingSum</b><code> [get, set]</code></td></tr>
+<tr class="separator:a955b9e9768a159c9371a28bc4fb43bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Property Tycoon board, acts as a game manager. Tracks board tiles, bank, cards, and players. </p>

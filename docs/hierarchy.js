@@ -6,8 +6,7 @@ var hierarchy =
     [ "MonoBehaviour", null, [
       [ "Menu", "class_menu.html", null ],
       [ "Player", "class_player.html", [
-        [ "Bot", "class_bot.html", null ],
-        [ "Human", "class_human.html", null ]
+        [ "Bot", "class_bot.html", null ]
       ] ]
     ] ],
     [ "Singleton", null, [

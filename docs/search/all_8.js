@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['name_0',['name',['../class_menu_player.html#a8d33fe3f4456da5209060cf63fdf4163',1,'MenuPlayer']]]
+  ['menu_0',['Menu',['../class_menu.html',1,'']]],
+  ['menuplayer_1',['MenuPlayer',['../class_menu_player.html',1,'MenuPlayer'],['../class_menu_player.html#a369d331488fa99756d7b1a50cfcbaa70',1,'MenuPlayer.MenuPlayer()']]]
 ];
