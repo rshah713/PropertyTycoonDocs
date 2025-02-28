@@ -104,14 +104,24 @@ $(function(){initNavTree('class_player.html',''); initResizable(true); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="class_player-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Player Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Represents a playable game object throughout the game, which can either be a human or a bot. This script handles player movement, dice rolling, and interactions with the game board.  
+<p>Represents a playable game object throughout the game, which can either be a human player or a bot.  
  <a href="#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for Player:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_player.png" usemap="#Player_map" alt=""/>
+  <map id="Player_map" name="Player_map">
+<area href="class_bot.html" title="AI Agent inherited from player class. Makes its own moves and decisions." alt="Bot" shape="rect" coords="0,112,102,136"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -119,6 +129,17 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>StartTurn</b> ()</td></tr>
 <tr class="memdesc:a19181efda3bd95fc43e7a911029dce11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the player's turn, setting them as the active player and updating the UI. <br /></td></tr>
 <tr class="separator:a19181efda3bd95fc43e7a911029dce11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d2dbe046e71ed4b116e1eb01c5f36c" id="r_a82d2dbe046e71ed4b116e1eb01c5f36c"><td class="memItemLeft" align="right" valign="top"><a id="a82d2dbe046e71ed4b116e1eb01c5f36c" name="a82d2dbe046e71ed4b116e1eb01c5f36c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CompleteTurn</b> ()</td></tr>
+<tr class="memdesc:a82d2dbe046e71ed4b116e1eb01c5f36c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once tile functionality is complete and either ends the turn or allows for another turn. <br /></td></tr>
+<tr class="separator:a82d2dbe046e71ed4b116e1eb01c5f36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad217b2c4f9ce02bb38b3819db0d2f20d" id="r_ad217b2c4f9ce02bb38b3819db0d2f20d"><td class="memItemLeft" align="right" valign="top"><a id="ad217b2c4f9ce02bb38b3819db0d2f20d" name="ad217b2c4f9ce02bb38b3819db0d2f20d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GoToJail</b> ()</td></tr>
+<tr class="memdesc:ad217b2c4f9ce02bb38b3819db0d2f20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the player to the Jail position and ends their turn. <br /></td></tr>
+<tr class="separator:ad217b2c4f9ce02bb38b3819db0d2f20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0174c8c1a84172677a86a0ae9dd0d3c" id="r_ae0174c8c1a84172677a86a0ae9dd0d3c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0174c8c1a84172677a86a0ae9dd0d3c">ForSaleDecision</a> (Property property)</td></tr>
+<tr class="memdesc:ae0174c8c1a84172677a86a0ae9dd0d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decision point for purchasing a property, shows for sale prompt and disables buttons accordingly.  <br /></td></tr>
+<tr class="separator:ae0174c8c1a84172677a86a0ae9dd0d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dfdd032abf083ff9ecebc859785a0bf" id="r_a4dfdd032abf083ff9ecebc859785a0bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dfdd032abf083ff9ecebc859785a0bf">GiveMoney</a> (int amount)</td></tr>
 <tr class="memdesc:a4dfdd032abf083ff9ecebc859785a0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives the player a specified amount of money.  <br /></td></tr>
 <tr class="separator:a4dfdd032abf083ff9ecebc859785a0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,26 +150,129 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>StartTurn</b> ()</td>
 <tr class="memdesc:a0997c43b7669d5a4b0a15b8f71073c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the sprite for the player game object.  <br /></td></tr>
 <tr class="separator:a0997c43b7669d5a4b0a15b8f71073c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ac91422d9704dd40c598c90035bbd5389" id="r_ac91422d9704dd40c598c90035bbd5389"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac91422d9704dd40c598c90035bbd5389">RollDiceDecision</a> ()</td></tr>
+<tr class="memdesc:ac91422d9704dd40c598c90035bbd5389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decision point for rolling dice.  <br /></td></tr>
+<tr class="separator:ac91422d9704dd40c598c90035bbd5389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69f7dc8eac8cb6c3e011709bd27c6364" id="r_a69f7dc8eac8cb6c3e011709bd27c6364"><td class="memItemLeft" align="right" valign="top"><a id="a69f7dc8eac8cb6c3e011709bd27c6364" name="a69f7dc8eac8cb6c3e011709bd27c6364"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnRollDice</b> ()</td></tr>
+<tr class="memdesc:a69f7dc8eac8cb6c3e011709bd27c6364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the rolling of dice and the action to take depending on the dice roll. <br /></td></tr>
+<tr class="separator:a69f7dc8eac8cb6c3e011709bd27c6364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27b1dfb479ad88f091e5239186e5c881" id="r_a27b1dfb479ad88f091e5239186e5c881"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27b1dfb479ad88f091e5239186e5c881">EndTurnDecision</a> ()</td></tr>
+<tr class="memdesc:a27b1dfb479ad88f091e5239186e5c881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decision point for ending turn.  <br /></td></tr>
+<tr class="separator:a27b1dfb479ad88f091e5239186e5c881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9568f322649bd430f1bcb238e134aec7" id="r_a9568f322649bd430f1bcb238e134aec7"><td class="memItemLeft" align="right" valign="top"><a id="a9568f322649bd430f1bcb238e134aec7" name="a9568f322649bd430f1bcb238e134aec7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEndTurn</b> ()</td></tr>
+<tr class="memdesc:a9568f322649bd430f1bcb238e134aec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the player's turn ending and signaling the board to end the turn. <br /></td></tr>
+<tr class="separator:a9568f322649bd430f1bcb238e134aec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e50369e1e1f18f0e028092a392e512" id="r_a00e50369e1e1f18f0e028092a392e512"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00e50369e1e1f18f0e028092a392e512">InJailDecision</a> ()</td></tr>
+<tr class="memdesc:a00e50369e1e1f18f0e028092a392e512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decision point for in jail, shows jail prompt and disables buttons accordingly.  <br /></td></tr>
+<tr class="separator:a00e50369e1e1f18f0e028092a392e512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d89e8721bdc923e2510badc3986623" id="r_a87d89e8721bdc923e2510badc3986623"><td class="memItemLeft" align="right" valign="top"><a id="a87d89e8721bdc923e2510badc3986623" name="a87d89e8721bdc923e2510badc3986623"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPostBail</b> ()</td></tr>
+<tr class="memdesc:a87d89e8721bdc923e2510badc3986623"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_player.html" title="Represents a playable game object throughout the game, which can either be a human player or a bot.">Player</a> pays fine and leaves jail. <br /></td></tr>
+<tr class="separator:a87d89e8721bdc923e2510badc3986623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09e02bc465f2f12bfcf330cb77f56c2c" id="r_a09e02bc465f2f12bfcf330cb77f56c2c"><td class="memItemLeft" align="right" valign="top"><a id="a09e02bc465f2f12bfcf330cb77f56c2c" name="a09e02bc465f2f12bfcf330cb77f56c2c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnGetOutOfJailFree</b> ()</td></tr>
+<tr class="memdesc:a09e02bc465f2f12bfcf330cb77f56c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_player.html" title="Represents a playable game object throughout the game, which can either be a human player or a bot.">Player</a> uses get out of jail card and leaves jail. <br /></td></tr>
+<tr class="separator:a09e02bc465f2f12bfcf330cb77f56c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8d60ca06a18288ccbda2877ab9715c3" id="r_ab8d60ca06a18288ccbda2877ab9715c3"><td class="memItemLeft" align="right" valign="top"><a id="ab8d60ca06a18288ccbda2877ab9715c3" name="ab8d60ca06a18288ccbda2877ab9715c3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnRemainInJail</b> ()</td></tr>
+<tr class="separator:ab8d60ca06a18288ccbda2877ab9715c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a961e6107712008c05f3b2db76d4f3dbc" id="r_a961e6107712008c05f3b2db76d4f3dbc"><td class="memItemLeft" align="right" valign="top"><a id="a961e6107712008c05f3b2db76d4f3dbc" name="a961e6107712008c05f3b2db76d4f3dbc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnBuy</b> ()</td></tr>
+<tr class="memdesc:a961e6107712008c05f3b2db76d4f3dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buys the property that the player is currently on. <br /></td></tr>
+<tr class="separator:a961e6107712008c05f3b2db76d4f3dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af13953c513eea14faf251280818042f5" id="r_af13953c513eea14faf251280818042f5"><td class="memItemLeft" align="right" valign="top"><a id="af13953c513eea14faf251280818042f5" name="af13953c513eea14faf251280818042f5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAuction</b> ()</td></tr>
+<tr class="memdesc:af13953c513eea14faf251280818042f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auctions the property that the player is currently on. <br /></td></tr>
+<tr class="separator:af13953c513eea14faf251280818042f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a8953673cf9ed34e606b67d4e7ff10d66" id="r_a8953673cf9ed34e606b67d4e7ff10d66"><td class="memItemLeft" align="right" valign="top"><a id="a8953673cf9ed34e606b67d4e7ff10d66" name="a8953673cf9ed34e606b67d4e7ff10d66"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b><code> [get, set]</code></td></tr>
 <tr class="separator:a8953673cf9ed34e606b67d4e7ff10d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4871048bfd7d17d4796b76ae373e6bd9" id="r_a4871048bfd7d17d4796b76ae373e6bd9"><td class="memItemLeft" align="right" valign="top"><a id="a4871048bfd7d17d4796b76ae373e6bd9" name="a4871048bfd7d17d4796b76ae373e6bd9"></a>
-Tile&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentTile</b><code> [get, set]</code></td></tr>
-<tr class="separator:a4871048bfd7d17d4796b76ae373e6bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d1dd0301bd68888757cd3d385f2bda3" id="r_a5d1dd0301bd68888757cd3d385f2bda3"><td class="memItemLeft" align="right" valign="top"><a id="a5d1dd0301bd68888757cd3d385f2bda3" name="a5d1dd0301bd68888757cd3d385f2bda3"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [get]</code></td></tr>
 <tr class="separator:a5d1dd0301bd68888757cd3d385f2bda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a playable game object throughout the game, which can either be a human or a bot. This script handles player movement, dice rolling, and interactions with the game board. </p>
+<div class="textblock"><p>Represents a playable game object throughout the game, which can either be a human player or a bot. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a27b1dfb479ad88f091e5239186e5c881" name="a27b1dfb479ad88f091e5239186e5c881"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27b1dfb479ad88f091e5239186e5c881">&#9670;&#160;</a></span>EndTurnDecision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Player.EndTurnDecision </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decision point for ending turn. </p>
+
+<p>Reimplemented in <a class="el" href="class_bot.html#a64e896d462f9828237e0c3f9c7dcb1b0">Bot</a>.</p>
+
+</div>
+</div>
+<a id="ae0174c8c1a84172677a86a0ae9dd0d3c" name="ae0174c8c1a84172677a86a0ae9dd0d3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0174c8c1a84172677a86a0ae9dd0d3c">&#9670;&#160;</a></span>ForSaleDecision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Player.ForSaleDecision </td>
+          <td>(</td>
+          <td class="paramtype">Property</td>          <td class="paramname"><span class="paramname"><em>property</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decision point for purchasing a property, shows for sale prompt and disables buttons accordingly. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">property</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="class_bot.html#a8bae3bee44f0f9f21c74eac4ae62df51">Bot</a>.</p>
+
+</div>
+</div>
 <a id="a4dfdd032abf083ff9ecebc859785a0bf" name="a4dfdd032abf083ff9ecebc859785a0bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4dfdd032abf083ff9ecebc859785a0bf">&#9670;&#160;</a></span>GiveMoney()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Player.GiveMoney </td>
@@ -157,6 +281,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Gives the player a specified amount of money. </p>
@@ -169,11 +298,72 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
 
 </div>
 </div>
+<a id="a00e50369e1e1f18f0e028092a392e512" name="a00e50369e1e1f18f0e028092a392e512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00e50369e1e1f18f0e028092a392e512">&#9670;&#160;</a></span>InJailDecision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Player.InJailDecision </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decision point for in jail, shows jail prompt and disables buttons accordingly. </p>
+
+<p>Reimplemented in <a class="el" href="class_bot.html#af023f860f23bb3569b053a49c1e61bbf">Bot</a>.</p>
+
+</div>
+</div>
+<a id="ac91422d9704dd40c598c90035bbd5389" name="ac91422d9704dd40c598c90035bbd5389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac91422d9704dd40c598c90035bbd5389">&#9670;&#160;</a></span>RollDiceDecision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Player.RollDiceDecision </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decision point for rolling dice. </p>
+
+<p>Reimplemented in <a class="el" href="class_bot.html#ac03e78a8a904d865bd3e9073ebfcac28">Bot</a>.</p>
+
+</div>
+</div>
 <a id="a0997c43b7669d5a4b0a15b8f71073c99" name="a0997c43b7669d5a4b0a15b8f71073c99"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0997c43b7669d5a4b0a15b8f71073c99">&#9670;&#160;</a></span>SetSprite()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Player.SetSprite </td>
@@ -182,6 +372,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Sets the sprite for the player game object. </p>
@@ -199,6 +394,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Player.TakeMoney </td>
@@ -207,6 +405,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Takes a specified amount of money from the player. </p>

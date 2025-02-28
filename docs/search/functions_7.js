@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['takemoney_0',['TakeMoney',['../class_player.html#aeb70c057f576632910267908aeaa0c95',1,'Player']]]
+  ['menuplayer_0',['MenuPlayer',['../class_menu_player.html#a369d331488fa99756d7b1a50cfcbaa70',1,'MenuPlayer']]]
 ];

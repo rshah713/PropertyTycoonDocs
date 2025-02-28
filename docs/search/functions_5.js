@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['readboarddata_0',['ReadBoardData',['../class_data_reader.html#a2baa23939d2d86ba585bec1e235ba557',1,'DataReader']]],
-  ['readcarddata_1',['ReadCardData',['../class_data_reader.html#a81784cd88643809dddaade862ff8a78f',1,'DataReader']]]
+  ['getinfopanel_0',['GetInfoPanel',['../class_u_i_manager.html#a8c9aab1026b4dab8d3a6e6a5d816361b',1,'UIManager']]],
+  ['givemoney_1',['GiveMoney',['../class_player.html#a4dfdd032abf083ff9ecebc859785a0bf',1,'Player']]],
+  ['gotojail_2',['GoToJail',['../class_player.html#ad217b2c4f9ce02bb38b3819db0d2f20d',1,'Player']]]
 ];

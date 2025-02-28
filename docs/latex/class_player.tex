@@ -1,0 +1,189 @@
+\doxysection{Player Class Reference}
+\hypertarget{class_player}{}\label{class_player}\index{Player@{Player}}
+
+
+Represents a playable game object throughout the game, which can either be a human player or a bot.  
+
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_player}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_player_a19181efda3bd95fc43e7a911029dce11}\label{class_player_a19181efda3bd95fc43e7a911029dce11} 
+void {\bfseries Start\+Turn} ()
+\begin{DoxyCompactList}\small\item\em Starts the player\textquotesingle{}s turn, setting them as the active player and updating the UI. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a82d2dbe046e71ed4b116e1eb01c5f36c}\label{class_player_a82d2dbe046e71ed4b116e1eb01c5f36c} 
+void {\bfseries Complete\+Turn} ()
+\begin{DoxyCompactList}\small\item\em Called once tile functionality is complete and either ends the turn or allows for another turn. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_ad217b2c4f9ce02bb38b3819db0d2f20d}\label{class_player_ad217b2c4f9ce02bb38b3819db0d2f20d} 
+void {\bfseries Go\+To\+Jail} ()
+\begin{DoxyCompactList}\small\item\em Sends the player to the Jail position and ends their turn. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_player_ae0174c8c1a84172677a86a0ae9dd0d3c}{For\+Sale\+Decision}} (Property property)
+\begin{DoxyCompactList}\small\item\em Decision point for purchasing a property, shows for sale prompt and disables buttons accordingly. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a4dfdd032abf083ff9ecebc859785a0bf}{Give\+Money}} (int amount)
+\begin{DoxyCompactList}\small\item\em Gives the player a specified amount of money. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_aeb70c057f576632910267908aeaa0c95}{Take\+Money}} (int amount)
+\begin{DoxyCompactList}\small\item\em Takes a specified amount of money from the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a0997c43b7669d5a4b0a15b8f71073c99}{Set\+Sprite}} (Sprite sprite)
+\begin{DoxyCompactList}\small\item\em Sets the sprite for the player game object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_player_ac91422d9704dd40c598c90035bbd5389}{Roll\+Dice\+Decision}} ()
+\begin{DoxyCompactList}\small\item\em Decision point for rolling dice. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a69f7dc8eac8cb6c3e011709bd27c6364}\label{class_player_a69f7dc8eac8cb6c3e011709bd27c6364} 
+void {\bfseries On\+Roll\+Dice} ()
+\begin{DoxyCompactList}\small\item\em Handles the rolling of dice and the action to take depending on the dice roll. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_player_a27b1dfb479ad88f091e5239186e5c881}{End\+Turn\+Decision}} ()
+\begin{DoxyCompactList}\small\item\em Decision point for ending turn. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a9568f322649bd430f1bcb238e134aec7}\label{class_player_a9568f322649bd430f1bcb238e134aec7} 
+void {\bfseries On\+End\+Turn} ()
+\begin{DoxyCompactList}\small\item\em Handles the player\textquotesingle{}s turn ending and signaling the board to end the turn. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_player_a00e50369e1e1f18f0e028092a392e512}{In\+Jail\+Decision}} ()
+\begin{DoxyCompactList}\small\item\em Decision point for in jail, shows jail prompt and disables buttons accordingly. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a87d89e8721bdc923e2510badc3986623}\label{class_player_a87d89e8721bdc923e2510badc3986623} 
+void {\bfseries On\+Post\+Bail} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_player}{Player} pays fine and leaves jail. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a09e02bc465f2f12bfcf330cb77f56c2c}\label{class_player_a09e02bc465f2f12bfcf330cb77f56c2c} 
+void {\bfseries On\+Get\+Out\+Of\+Jail\+Free} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_player}{Player} uses get out of jail card and leaves jail. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_ab8d60ca06a18288ccbda2877ab9715c3}\label{class_player_ab8d60ca06a18288ccbda2877ab9715c3} 
+void {\bfseries On\+Remain\+In\+Jail} ()
+\item 
+\Hypertarget{class_player_a961e6107712008c05f3b2db76d4f3dbc}\label{class_player_a961e6107712008c05f3b2db76d4f3dbc} 
+void {\bfseries On\+Buy} ()
+\begin{DoxyCompactList}\small\item\em Buys the property that the player is currently on. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_af13953c513eea14faf251280818042f5}\label{class_player_af13953c513eea14faf251280818042f5} 
+void {\bfseries On\+Auction} ()
+\begin{DoxyCompactList}\small\item\em Auctions the property that the player is currently on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_player_a8953673cf9ed34e606b67d4e7ff10d66}\label{class_player_a8953673cf9ed34e606b67d4e7ff10d66} 
+string {\bfseries Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_player_a5d1dd0301bd68888757cd3d385f2bda3}\label{class_player_a5d1dd0301bd68888757cd3d385f2bda3} 
+int {\bfseries Dice\+Roll}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a playable game object throughout the game, which can either be a human player or a bot. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_player_a27b1dfb479ad88f091e5239186e5c881}\index{Player@{Player}!EndTurnDecision@{EndTurnDecision}}
+\index{EndTurnDecision@{EndTurnDecision}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{EndTurnDecision()}{EndTurnDecision()}}
+{\footnotesize\ttfamily \label{class_player_a27b1dfb479ad88f091e5239186e5c881} 
+virtual void Player.\+End\+Turn\+Decision (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Decision point for ending turn. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_bot_a64e896d462f9828237e0c3f9c7dcb1b0}{Bot}}.
+
+\Hypertarget{class_player_ae0174c8c1a84172677a86a0ae9dd0d3c}\index{Player@{Player}!ForSaleDecision@{ForSaleDecision}}
+\index{ForSaleDecision@{ForSaleDecision}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{ForSaleDecision()}{ForSaleDecision()}}
+{\footnotesize\ttfamily \label{class_player_ae0174c8c1a84172677a86a0ae9dd0d3c} 
+virtual void Player.\+For\+Sale\+Decision (\begin{DoxyParamCaption}\item[{Property}]{property}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Decision point for purchasing a property, shows for sale prompt and disables buttons accordingly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em property} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_bot_a8bae3bee44f0f9f21c74eac4ae62df51}{Bot}}.
+
+\Hypertarget{class_player_a4dfdd032abf083ff9ecebc859785a0bf}\index{Player@{Player}!GiveMoney@{GiveMoney}}
+\index{GiveMoney@{GiveMoney}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{GiveMoney()}{GiveMoney()}}
+{\footnotesize\ttfamily \label{class_player_a4dfdd032abf083ff9ecebc859785a0bf} 
+void Player.\+Give\+Money (\begin{DoxyParamCaption}\item[{int}]{amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gives the player a specified amount of money. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount of money to give the player.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a00e50369e1e1f18f0e028092a392e512}\index{Player@{Player}!InJailDecision@{InJailDecision}}
+\index{InJailDecision@{InJailDecision}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{InJailDecision()}{InJailDecision()}}
+{\footnotesize\ttfamily \label{class_player_a00e50369e1e1f18f0e028092a392e512} 
+virtual void Player.\+In\+Jail\+Decision (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Decision point for in jail, shows jail prompt and disables buttons accordingly. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_bot_af023f860f23bb3569b053a49c1e61bbf}{Bot}}.
+
+\Hypertarget{class_player_ac91422d9704dd40c598c90035bbd5389}\index{Player@{Player}!RollDiceDecision@{RollDiceDecision}}
+\index{RollDiceDecision@{RollDiceDecision}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{RollDiceDecision()}{RollDiceDecision()}}
+{\footnotesize\ttfamily \label{class_player_ac91422d9704dd40c598c90035bbd5389} 
+virtual void Player.\+Roll\+Dice\+Decision (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Decision point for rolling dice. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_bot_ac03e78a8a904d865bd3e9073ebfcac28}{Bot}}.
+
+\Hypertarget{class_player_a0997c43b7669d5a4b0a15b8f71073c99}\index{Player@{Player}!SetSprite@{SetSprite}}
+\index{SetSprite@{SetSprite}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{SetSprite()}{SetSprite()}}
+{\footnotesize\ttfamily \label{class_player_a0997c43b7669d5a4b0a15b8f71073c99} 
+void Player.\+Set\+Sprite (\begin{DoxyParamCaption}\item[{Sprite}]{sprite}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the sprite for the player game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & The sprite to set for the player.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_aeb70c057f576632910267908aeaa0c95}\index{Player@{Player}!TakeMoney@{TakeMoney}}
+\index{TakeMoney@{TakeMoney}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{TakeMoney()}{TakeMoney()}}
+{\footnotesize\ttfamily \label{class_player_aeb70c057f576632910267908aeaa0c95} 
+void Player.\+Take\+Money (\begin{DoxyParamCaption}\item[{int}]{amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Takes a specified amount of money from the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount of money to take from the player.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/Player.\+cs\end{DoxyCompactItemize}

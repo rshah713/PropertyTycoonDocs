@@ -1,0 +1,134 @@
+\doxysection{UIManager Class Reference}
+\hypertarget{class_u_i_manager}{}\label{class_u_i_manager}\index{UIManager@{UIManager}}
+
+
+Manages the UI elements and interactions in the game.  
+
+
+Inheritance diagram for UIManager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_i_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_u_i_manager_a27778f5dbd8679556d46cccdc8801319}\label{class_u_i_manager_a27778f5dbd8679556d46cccdc8801319} 
+void {\bfseries Show\+Roll\+Dice\+Prompt} ()
+\item 
+\Hypertarget{class_u_i_manager_a162411391288c13fc184f5c8c89e4644}\label{class_u_i_manager_a162411391288c13fc184f5c8c89e4644} 
+void {\bfseries Hide\+Roll\+Dice\+Prompt} ()
+\item 
+\Hypertarget{class_u_i_manager_a2bae7252214fd6ad1c5975607279fe28}\label{class_u_i_manager_a2bae7252214fd6ad1c5975607279fe28} 
+void {\bfseries Show\+End\+Turn\+Prompt} ()
+\item 
+\Hypertarget{class_u_i_manager_a2bb0c0b2b8d205ce60be679859a9e802}\label{class_u_i_manager_a2bb0c0b2b8d205ce60be679859a9e802} 
+void {\bfseries Hide\+End\+Turn\+Prompt} ()
+\item 
+\Hypertarget{class_u_i_manager_a33e643b1b0d35fe79308af6bc3ade2a5}\label{class_u_i_manager_a33e643b1b0d35fe79308af6bc3ade2a5} 
+void {\bfseries Show\+For\+Sale\+Prompt} (bool buy\+Button\+Enabled, bool auction\+Button\+Enabled, Property property)
+\item 
+\Hypertarget{class_u_i_manager_aa2ea8a4b9a012ac3092984787e3b52e0}\label{class_u_i_manager_aa2ea8a4b9a012ac3092984787e3b52e0} 
+void {\bfseries Hide\+For\+Sale\+Prompt} ()
+\item 
+\Hypertarget{class_u_i_manager_a915f7825264270564564c21864e13e93}\label{class_u_i_manager_a915f7825264270564564c21864e13e93} 
+void {\bfseries Show\+Go\+To\+Jail\+Popup} ()
+\item 
+\Hypertarget{class_u_i_manager_aa3f2dc4ea7d8a38bf75b65c9fafba656}\label{class_u_i_manager_aa3f2dc4ea7d8a38bf75b65c9fafba656} 
+void {\bfseries Hide\+Go\+To\+Jail\+Popup} ()
+\item 
+\Hypertarget{class_u_i_manager_a7baf2067f71ce6ff603e5bccf0b68194}\label{class_u_i_manager_a7baf2067f71ce6ff603e5bccf0b68194} 
+void {\bfseries Show\+In\+Jail\+Prompt} (bool post\+Bail\+Button\+Enabled, bool get\+Out\+Of\+Jail\+Free\+Button\+Enabled, bool remain\+In\+Jail\+Button\+Enabled)
+\item 
+\Hypertarget{class_u_i_manager_a2c8c5d93fdef9d460066cf6cbb5bd5b4}\label{class_u_i_manager_a2c8c5d93fdef9d460066cf6cbb5bd5b4} 
+void {\bfseries Hide\+In\+Jail\+Prompt} ()
+\item 
+Game\+Object \mbox{\hyperlink{class_u_i_manager_a8c9aab1026b4dab8d3a6e6a5d816361b}{Get\+Info\+Panel}} ()
+\begin{DoxyCompactList}\small\item\em Returns the next available UI panel and makes it visible. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_i_manager_a74554ae11f62c57cb8967556ff840d71}{Set\+Active\+Player\+Info}} (string name, Sprite sprite)
+\begin{DoxyCompactList}\small\item\em Sets the active player\textquotesingle{}s information in the UI. \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{class_u_i_manager_a07655caa8c4ae3a87307ae2792d2d499}{Animate\+Dice\+Roll}} (int dice\+Roll1, int dice\+Roll2)
+\begin{DoxyCompactList}\small\item\em Animates the dice roll and sets the final sprite to the dice roll values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_u_i_manager_a07d059dfa275cb3b9a69e38211f859f8}\label{class_u_i_manager_a07d059dfa275cb3b9a69e38211f859f8} 
+Button {\bfseries roll\+Dice\+Button}
+\item 
+\Hypertarget{class_u_i_manager_ac5c6aa1f354809d51bbbead7071a3257}\label{class_u_i_manager_ac5c6aa1f354809d51bbbead7071a3257} 
+Button {\bfseries end\+Turn\+Button}
+\item 
+\Hypertarget{class_u_i_manager_a68983ff30e260c7b7b4f5372b2da34eb}\label{class_u_i_manager_a68983ff30e260c7b7b4f5372b2da34eb} 
+Button {\bfseries buy\+Button}
+\item 
+\Hypertarget{class_u_i_manager_a044b9780cca22ac33339ce12831d14e7}\label{class_u_i_manager_a044b9780cca22ac33339ce12831d14e7} 
+Button {\bfseries auction\+Button}
+\item 
+\Hypertarget{class_u_i_manager_a5ae7977dfc3a1a7c7c717f225fefd508}\label{class_u_i_manager_a5ae7977dfc3a1a7c7c717f225fefd508} 
+Button {\bfseries post\+Bail\+Button}
+\item 
+\Hypertarget{class_u_i_manager_a42742b1e936d03f183ea1fc3d8393c36}\label{class_u_i_manager_a42742b1e936d03f183ea1fc3d8393c36} 
+Button {\bfseries get\+Out\+Of\+Jail\+Free\+Button}
+\item 
+\Hypertarget{class_u_i_manager_ae3e86b68d978c9dc202cab33e6d7ec52}\label{class_u_i_manager_ae3e86b68d978c9dc202cab33e6d7ec52} 
+Button {\bfseries remain\+In\+Jail\+Button}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the UI elements and interactions in the game. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_i_manager_a07655caa8c4ae3a87307ae2792d2d499}\index{UIManager@{UIManager}!AnimateDiceRoll@{AnimateDiceRoll}}
+\index{AnimateDiceRoll@{AnimateDiceRoll}!UIManager@{UIManager}}
+\doxysubsubsection{\texorpdfstring{AnimateDiceRoll()}{AnimateDiceRoll()}}
+{\footnotesize\ttfamily \label{class_u_i_manager_a07655caa8c4ae3a87307ae2792d2d499} 
+IEnumerator UIManager.\+Animate\+Dice\+Roll (\begin{DoxyParamCaption}\item[{int}]{dice\+Roll1}{, }\item[{int}]{dice\+Roll2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Animates the dice roll and sets the final sprite to the dice roll values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dice\+Roll1} & The first dice roll result.\\
+\hline
+{\em dice\+Roll2} & The second dice roll result.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_u_i_manager_a8c9aab1026b4dab8d3a6e6a5d816361b}\index{UIManager@{UIManager}!GetInfoPanel@{GetInfoPanel}}
+\index{GetInfoPanel@{GetInfoPanel}!UIManager@{UIManager}}
+\doxysubsubsection{\texorpdfstring{GetInfoPanel()}{GetInfoPanel()}}
+{\footnotesize\ttfamily \label{class_u_i_manager_a8c9aab1026b4dab8d3a6e6a5d816361b} 
+Game\+Object UIManager.\+Get\+Info\+Panel (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the next available UI panel and makes it visible. 
+
+\begin{DoxyReturn}{Returns}
+The UI Panel component 
+\end{DoxyReturn}
+\Hypertarget{class_u_i_manager_a74554ae11f62c57cb8967556ff840d71}\index{UIManager@{UIManager}!SetActivePlayerInfo@{SetActivePlayerInfo}}
+\index{SetActivePlayerInfo@{SetActivePlayerInfo}!UIManager@{UIManager}}
+\doxysubsubsection{\texorpdfstring{SetActivePlayerInfo()}{SetActivePlayerInfo()}}
+{\footnotesize\ttfamily \label{class_u_i_manager_a74554ae11f62c57cb8967556ff840d71} 
+void UIManager.\+Set\+Active\+Player\+Info (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Sprite}]{sprite}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the active player\textquotesingle{}s information in the UI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the active player.\\
+\hline
+{\em sprite} & The sprite representing the player.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/UIManager.\+cs\end{DoxyCompactItemize}
