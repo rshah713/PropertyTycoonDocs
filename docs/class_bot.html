@@ -124,7 +124,7 @@ Inheritance diagram for Bot:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8bae3bee44f0f9f21c74eac4ae62df51" id="r_a8bae3bee44f0f9f21c74eac4ae62df51"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bae3bee44f0f9f21c74eac4ae62df51">ForSaleDecision</a> (Property property)</td></tr>
+<tr class="memitem:a8bae3bee44f0f9f21c74eac4ae62df51" id="r_a8bae3bee44f0f9f21c74eac4ae62df51"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bae3bee44f0f9f21c74eac4ae62df51">ForSaleDecision</a> (<a class="el" href="class_tiles_1_1_property.html">Property</a> property)</td></tr>
 <tr class="memdesc:a8bae3bee44f0f9f21c74eac4ae62df51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decision point for purchasing a property, shows for sale prompt and disables buttons accordingly.  <br /></td></tr>
 <tr class="separator:a8bae3bee44f0f9f21c74eac4ae62df51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_player"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_player')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_player.html">Player</a></td></tr>
@@ -132,20 +132,29 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>StartTurn</b> ()</td></tr>
 <tr class="memdesc:a19181efda3bd95fc43e7a911029dce11 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the player's turn, setting them as the active player and updating the UI. <br /></td></tr>
 <tr class="separator:a19181efda3bd95fc43e7a911029dce11 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1226d8168ab1a672bf381f190483638e inherit pub_methods_class_player" id="r_a1226d8168ab1a672bf381f190483638e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a1226d8168ab1a672bf381f190483638e">ShiftTileIndex</a> (int offset)</td></tr>
+<tr class="memdesc:a1226d8168ab1a672bf381f190483638e inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the newTileIndex depending on the offset from the currentTileIndex, e.g. offset of -3 sets newTileIndex back 3 spaces.  <br /></td></tr>
+<tr class="separator:a1226d8168ab1a672bf381f190483638e inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bcfc33662a520060a2097eca021baf9 inherit pub_methods_class_player" id="r_a2bcfc33662a520060a2097eca021baf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a2bcfc33662a520060a2097eca021baf9">SetNewTileIndex</a> (int newTileIndex)</td></tr>
+<tr class="memdesc:a2bcfc33662a520060a2097eca021baf9 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the new tile index for the player, ensuring it wraps around the board if necessary.  <br /></td></tr>
+<tr class="separator:a2bcfc33662a520060a2097eca021baf9 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82d2dbe046e71ed4b116e1eb01c5f36c inherit pub_methods_class_player" id="r_a82d2dbe046e71ed4b116e1eb01c5f36c"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CompleteTurn</b> ()</td></tr>
 <tr class="memdesc:a82d2dbe046e71ed4b116e1eb01c5f36c inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once tile functionality is complete and either ends the turn or allows for another turn. <br /></td></tr>
 <tr class="separator:a82d2dbe046e71ed4b116e1eb01c5f36c inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad217b2c4f9ce02bb38b3819db0d2f20d inherit pub_methods_class_player" id="r_ad217b2c4f9ce02bb38b3819db0d2f20d"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GoToJail</b> ()</td></tr>
-<tr class="memdesc:ad217b2c4f9ce02bb38b3819db0d2f20d inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the player to the Jail position and ends their turn. <br /></td></tr>
-<tr class="separator:ad217b2c4f9ce02bb38b3819db0d2f20d inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a8fa05dc2be88786b39140c3cfc8384 inherit pub_methods_class_player" id="r_a0a8fa05dc2be88786b39140c3cfc8384"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GoToJail</b> (bool showPopup)</td></tr>
+<tr class="memdesc:a0a8fa05dc2be88786b39140c3cfc8384 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the player to the <a class="el" href="class_tiles_1_1_jail.html">Jail</a> position and ends their turn. <br /></td></tr>
+<tr class="separator:a0a8fa05dc2be88786b39140c3cfc8384 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dfdd032abf083ff9ecebc859785a0bf inherit pub_methods_class_player" id="r_a4dfdd032abf083ff9ecebc859785a0bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a4dfdd032abf083ff9ecebc859785a0bf">GiveMoney</a> (int amount)</td></tr>
 <tr class="memdesc:a4dfdd032abf083ff9ecebc859785a0bf inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives the player a specified amount of money.  <br /></td></tr>
 <tr class="separator:a4dfdd032abf083ff9ecebc859785a0bf inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb70c057f576632910267908aeaa0c95 inherit pub_methods_class_player" id="r_aeb70c057f576632910267908aeaa0c95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#aeb70c057f576632910267908aeaa0c95">TakeMoney</a> (int amount)</td></tr>
 <tr class="memdesc:aeb70c057f576632910267908aeaa0c95 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a specified amount of money from the player.  <br /></td></tr>
 <tr class="separator:aeb70c057f576632910267908aeaa0c95 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7c4ac7696dc2e2d837ffda3c443efb7 inherit pub_methods_class_player" id="r_af7c4ac7696dc2e2d837ffda3c443efb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#af7c4ac7696dc2e2d837ffda3c443efb7">AddGetOutOfJailFreeCard</a> (<a class="el" href="class_action_card.html">ActionCard</a> actionCard)</td></tr>
+<tr class="memdesc:af7c4ac7696dc2e2d837ffda3c443efb7 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a Get Out Of <a class="el" href="class_tiles_1_1_jail.html">Jail</a> Free card to the player's collection.  <br /></td></tr>
+<tr class="separator:af7c4ac7696dc2e2d837ffda3c443efb7 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0997c43b7669d5a4b0a15b8f71073c99 inherit pub_methods_class_player" id="r_a0997c43b7669d5a4b0a15b8f71073c99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a0997c43b7669d5a4b0a15b8f71073c99">SetSprite</a> (Sprite sprite)</td></tr>
 <tr class="memdesc:a0997c43b7669d5a4b0a15b8f71073c99 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the sprite for the player game object.  <br /></td></tr>
 <tr class="separator:a0997c43b7669d5a4b0a15b8f71073c99 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,10 +185,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPostBail</b> ()</td
 <tr class="separator:a87d89e8721bdc923e2510badc3986623 inherit pro_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09e02bc465f2f12bfcf330cb77f56c2c inherit pro_methods_class_player" id="r_a09e02bc465f2f12bfcf330cb77f56c2c"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnGetOutOfJailFree</b> ()</td></tr>
-<tr class="memdesc:a09e02bc465f2f12bfcf330cb77f56c2c inherit pro_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_player.html" title="Represents a playable game object throughout the game, which can either be a human player or a bot.">Player</a> uses get out of jail card and leaves jail. <br /></td></tr>
+<tr class="memdesc:a09e02bc465f2f12bfcf330cb77f56c2c inherit pro_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_player.html" title="Represents a playable game object throughout the game, which can either be a human player or a bot.">Player</a> returns get out of jail free card to board card pile and leaves jail. <br /></td></tr>
 <tr class="separator:a09e02bc465f2f12bfcf330cb77f56c2c inherit pro_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8d60ca06a18288ccbda2877ab9715c3 inherit pro_methods_class_player" id="r_ab8d60ca06a18288ccbda2877ab9715c3"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnRemainInJail</b> ()</td></tr>
+<tr class="memdesc:ab8d60ca06a18288ccbda2877ab9715c3 inherit pro_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the player's decision to remain in jail, hiding the jail prompt and ending the turn. <br /></td></tr>
 <tr class="separator:ab8d60ca06a18288ccbda2877ab9715c3 inherit pro_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a961e6107712008c05f3b2db76d4f3dbc inherit pro_methods_class_player" id="r_a961e6107712008c05f3b2db76d4f3dbc"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnBuy</b> ()</td></tr>
@@ -192,13 +202,29 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAuction</b> ()</td>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_class_player"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_class_player')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_player.html">Player</a></td></tr>
+<tr class="memitem:a5f3e7ab9d88dfc5c9acc20f811f60bc5 inherit pub_attribs_class_player" id="r_a5f3e7ab9d88dfc5c9acc20f811f60bc5"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>moveTest</b></td></tr>
+<tr class="separator:a5f3e7ab9d88dfc5c9acc20f811f60bc5 inherit pub_attribs_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_player"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_class_player')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_player.html">Player</a></td></tr>
+<tr class="memitem:aa28c646a9be8c23fa1ac6547601658f9 inherit properties_class_player" id="r_aa28c646a9be8c23fa1ac6547601658f9"><td class="memItemLeft" align="right" valign="top">
+Sprite&#160;</td><td class="memItemRight" valign="bottom"><b>Sprite</b><code> [get]</code></td></tr>
+<tr class="separator:aa28c646a9be8c23fa1ac6547601658f9 inherit properties_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8953673cf9ed34e606b67d4e7ff10d66 inherit properties_class_player" id="r_a8953673cf9ed34e606b67d4e7ff10d66"><td class="memItemLeft" align="right" valign="top">
 string&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b><code> [get, set]</code></td></tr>
 <tr class="separator:a8953673cf9ed34e606b67d4e7ff10d66 inherit properties_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fdf89dddb14f7e63392bad73a835305 inherit properties_class_player" id="r_a4fdf89dddb14f7e63392bad73a835305"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>InJail</b><code> [get]</code></td></tr>
+<tr class="separator:a4fdf89dddb14f7e63392bad73a835305 inherit properties_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d1dd0301bd68888757cd3d385f2bda3 inherit properties_class_player" id="r_a5d1dd0301bd68888757cd3d385f2bda3"><td class="memItemLeft" align="right" valign="top">
 int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [get]</code></td></tr>
 <tr class="separator:a5d1dd0301bd68888757cd3d385f2bda3 inherit properties_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd3f70b06b8ce034872686b2cd7278f8 inherit properties_class_player" id="r_afd3f70b06b8ce034872686b2cd7278f8"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Houses</b><code> [get]</code></td></tr>
+<tr class="separator:afd3f70b06b8ce034872686b2cd7278f8 inherit properties_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d8c2166b698e65b72d55f5b14ffe32c inherit properties_class_player" id="r_a1d8c2166b698e65b72d55f5b14ffe32c"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Hotels</b><code> [get]</code></td></tr>
+<tr class="separator:a1d8c2166b698e65b72d55f5b14ffe32c inherit properties_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>AI Agent inherited from player class. Makes its own moves and decisions. </p>
@@ -221,7 +247,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -244,13 +270,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
         <tr>
           <td class="memname">override void Bot.ForSaleDecision </td>
           <td>(</td>
-          <td class="paramtype">Property</td>          <td class="paramname"><span class="paramname"><em>property</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_tiles_1_1_property.html">Property</a></td>          <td class="paramname"><span class="paramname"><em>property</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -285,7 +311,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -314,7 +340,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -326,7 +352,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Assets/Scripts/<b>Bot.cs</b></li>
+<li>PropertyTycoon/Assets/Scripts/<b>Bot.cs</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

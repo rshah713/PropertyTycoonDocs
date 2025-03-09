@@ -104,6 +104,7 @@ $(function(){initNavTree('class_player.html',''); initResizable(true); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="class_player-members.html">List of all members</a>  </div>
@@ -129,15 +130,21 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>StartTurn</b> ()</td></tr>
 <tr class="memdesc:a19181efda3bd95fc43e7a911029dce11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the player's turn, setting them as the active player and updating the UI. <br /></td></tr>
 <tr class="separator:a19181efda3bd95fc43e7a911029dce11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1226d8168ab1a672bf381f190483638e" id="r_a1226d8168ab1a672bf381f190483638e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1226d8168ab1a672bf381f190483638e">ShiftTileIndex</a> (int offset)</td></tr>
+<tr class="memdesc:a1226d8168ab1a672bf381f190483638e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the newTileIndex depending on the offset from the currentTileIndex, e.g. offset of -3 sets newTileIndex back 3 spaces.  <br /></td></tr>
+<tr class="separator:a1226d8168ab1a672bf381f190483638e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bcfc33662a520060a2097eca021baf9" id="r_a2bcfc33662a520060a2097eca021baf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bcfc33662a520060a2097eca021baf9">SetNewTileIndex</a> (int newTileIndex)</td></tr>
+<tr class="memdesc:a2bcfc33662a520060a2097eca021baf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the new tile index for the player, ensuring it wraps around the board if necessary.  <br /></td></tr>
+<tr class="separator:a2bcfc33662a520060a2097eca021baf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82d2dbe046e71ed4b116e1eb01c5f36c" id="r_a82d2dbe046e71ed4b116e1eb01c5f36c"><td class="memItemLeft" align="right" valign="top"><a id="a82d2dbe046e71ed4b116e1eb01c5f36c" name="a82d2dbe046e71ed4b116e1eb01c5f36c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CompleteTurn</b> ()</td></tr>
 <tr class="memdesc:a82d2dbe046e71ed4b116e1eb01c5f36c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once tile functionality is complete and either ends the turn or allows for another turn. <br /></td></tr>
 <tr class="separator:a82d2dbe046e71ed4b116e1eb01c5f36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad217b2c4f9ce02bb38b3819db0d2f20d" id="r_ad217b2c4f9ce02bb38b3819db0d2f20d"><td class="memItemLeft" align="right" valign="top"><a id="ad217b2c4f9ce02bb38b3819db0d2f20d" name="ad217b2c4f9ce02bb38b3819db0d2f20d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GoToJail</b> ()</td></tr>
-<tr class="memdesc:ad217b2c4f9ce02bb38b3819db0d2f20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the player to the Jail position and ends their turn. <br /></td></tr>
-<tr class="separator:ad217b2c4f9ce02bb38b3819db0d2f20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0174c8c1a84172677a86a0ae9dd0d3c" id="r_ae0174c8c1a84172677a86a0ae9dd0d3c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0174c8c1a84172677a86a0ae9dd0d3c">ForSaleDecision</a> (Property property)</td></tr>
+<tr class="memitem:a0a8fa05dc2be88786b39140c3cfc8384" id="r_a0a8fa05dc2be88786b39140c3cfc8384"><td class="memItemLeft" align="right" valign="top"><a id="a0a8fa05dc2be88786b39140c3cfc8384" name="a0a8fa05dc2be88786b39140c3cfc8384"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GoToJail</b> (bool showPopup)</td></tr>
+<tr class="memdesc:a0a8fa05dc2be88786b39140c3cfc8384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the player to the <a class="el" href="class_tiles_1_1_jail.html">Jail</a> position and ends their turn. <br /></td></tr>
+<tr class="separator:a0a8fa05dc2be88786b39140c3cfc8384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0174c8c1a84172677a86a0ae9dd0d3c" id="r_ae0174c8c1a84172677a86a0ae9dd0d3c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0174c8c1a84172677a86a0ae9dd0d3c">ForSaleDecision</a> (<a class="el" href="class_tiles_1_1_property.html">Property</a> property)</td></tr>
 <tr class="memdesc:ae0174c8c1a84172677a86a0ae9dd0d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decision point for purchasing a property, shows for sale prompt and disables buttons accordingly.  <br /></td></tr>
 <tr class="separator:ae0174c8c1a84172677a86a0ae9dd0d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dfdd032abf083ff9ecebc859785a0bf" id="r_a4dfdd032abf083ff9ecebc859785a0bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dfdd032abf083ff9ecebc859785a0bf">GiveMoney</a> (int amount)</td></tr>
@@ -146,9 +153,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GoToJail</b> ()</td><
 <tr class="memitem:aeb70c057f576632910267908aeaa0c95" id="r_aeb70c057f576632910267908aeaa0c95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb70c057f576632910267908aeaa0c95">TakeMoney</a> (int amount)</td></tr>
 <tr class="memdesc:aeb70c057f576632910267908aeaa0c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a specified amount of money from the player.  <br /></td></tr>
 <tr class="separator:aeb70c057f576632910267908aeaa0c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7c4ac7696dc2e2d837ffda3c443efb7" id="r_af7c4ac7696dc2e2d837ffda3c443efb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7c4ac7696dc2e2d837ffda3c443efb7">AddGetOutOfJailFreeCard</a> (<a class="el" href="class_action_card.html">ActionCard</a> actionCard)</td></tr>
+<tr class="memdesc:af7c4ac7696dc2e2d837ffda3c443efb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a Get Out Of <a class="el" href="class_tiles_1_1_jail.html">Jail</a> Free card to the player's collection.  <br /></td></tr>
+<tr class="separator:af7c4ac7696dc2e2d837ffda3c443efb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0997c43b7669d5a4b0a15b8f71073c99" id="r_a0997c43b7669d5a4b0a15b8f71073c99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0997c43b7669d5a4b0a15b8f71073c99">SetSprite</a> (Sprite sprite)</td></tr>
 <tr class="memdesc:a0997c43b7669d5a4b0a15b8f71073c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the sprite for the player game object.  <br /></td></tr>
 <tr class="separator:a0997c43b7669d5a4b0a15b8f71073c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a5f3e7ab9d88dfc5c9acc20f811f60bc5" id="r_a5f3e7ab9d88dfc5c9acc20f811f60bc5"><td class="memItemLeft" align="right" valign="top"><a id="a5f3e7ab9d88dfc5c9acc20f811f60bc5" name="a5f3e7ab9d88dfc5c9acc20f811f60bc5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>moveTest</b></td></tr>
+<tr class="separator:a5f3e7ab9d88dfc5c9acc20f811f60bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -175,10 +191,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPostBail</b> ()</td
 <tr class="separator:a87d89e8721bdc923e2510badc3986623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09e02bc465f2f12bfcf330cb77f56c2c" id="r_a09e02bc465f2f12bfcf330cb77f56c2c"><td class="memItemLeft" align="right" valign="top"><a id="a09e02bc465f2f12bfcf330cb77f56c2c" name="a09e02bc465f2f12bfcf330cb77f56c2c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnGetOutOfJailFree</b> ()</td></tr>
-<tr class="memdesc:a09e02bc465f2f12bfcf330cb77f56c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_player.html" title="Represents a playable game object throughout the game, which can either be a human player or a bot.">Player</a> uses get out of jail card and leaves jail. <br /></td></tr>
+<tr class="memdesc:a09e02bc465f2f12bfcf330cb77f56c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_player.html" title="Represents a playable game object throughout the game, which can either be a human player or a bot.">Player</a> returns get out of jail free card to board card pile and leaves jail. <br /></td></tr>
 <tr class="separator:a09e02bc465f2f12bfcf330cb77f56c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8d60ca06a18288ccbda2877ab9715c3" id="r_ab8d60ca06a18288ccbda2877ab9715c3"><td class="memItemLeft" align="right" valign="top"><a id="ab8d60ca06a18288ccbda2877ab9715c3" name="ab8d60ca06a18288ccbda2877ab9715c3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnRemainInJail</b> ()</td></tr>
+<tr class="memdesc:ab8d60ca06a18288ccbda2877ab9715c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the player's decision to remain in jail, hiding the jail prompt and ending the turn. <br /></td></tr>
 <tr class="separator:ab8d60ca06a18288ccbda2877ab9715c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a961e6107712008c05f3b2db76d4f3dbc" id="r_a961e6107712008c05f3b2db76d4f3dbc"><td class="memItemLeft" align="right" valign="top"><a id="a961e6107712008c05f3b2db76d4f3dbc" name="a961e6107712008c05f3b2db76d4f3dbc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnBuy</b> ()</td></tr>
@@ -191,16 +208,53 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAuction</b> ()</td>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
+<tr class="memitem:aa28c646a9be8c23fa1ac6547601658f9" id="r_aa28c646a9be8c23fa1ac6547601658f9"><td class="memItemLeft" align="right" valign="top"><a id="aa28c646a9be8c23fa1ac6547601658f9" name="aa28c646a9be8c23fa1ac6547601658f9"></a>
+Sprite&#160;</td><td class="memItemRight" valign="bottom"><b>Sprite</b><code> [get]</code></td></tr>
+<tr class="separator:aa28c646a9be8c23fa1ac6547601658f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8953673cf9ed34e606b67d4e7ff10d66" id="r_a8953673cf9ed34e606b67d4e7ff10d66"><td class="memItemLeft" align="right" valign="top"><a id="a8953673cf9ed34e606b67d4e7ff10d66" name="a8953673cf9ed34e606b67d4e7ff10d66"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b><code> [get, set]</code></td></tr>
 <tr class="separator:a8953673cf9ed34e606b67d4e7ff10d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fdf89dddb14f7e63392bad73a835305" id="r_a4fdf89dddb14f7e63392bad73a835305"><td class="memItemLeft" align="right" valign="top"><a id="a4fdf89dddb14f7e63392bad73a835305" name="a4fdf89dddb14f7e63392bad73a835305"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>InJail</b><code> [get]</code></td></tr>
+<tr class="separator:a4fdf89dddb14f7e63392bad73a835305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d1dd0301bd68888757cd3d385f2bda3" id="r_a5d1dd0301bd68888757cd3d385f2bda3"><td class="memItemLeft" align="right" valign="top"><a id="a5d1dd0301bd68888757cd3d385f2bda3" name="a5d1dd0301bd68888757cd3d385f2bda3"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [get]</code></td></tr>
 <tr class="separator:a5d1dd0301bd68888757cd3d385f2bda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd3f70b06b8ce034872686b2cd7278f8" id="r_afd3f70b06b8ce034872686b2cd7278f8"><td class="memItemLeft" align="right" valign="top"><a id="afd3f70b06b8ce034872686b2cd7278f8" name="afd3f70b06b8ce034872686b2cd7278f8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Houses</b><code> [get]</code></td></tr>
+<tr class="separator:afd3f70b06b8ce034872686b2cd7278f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d8c2166b698e65b72d55f5b14ffe32c" id="r_a1d8c2166b698e65b72d55f5b14ffe32c"><td class="memItemLeft" align="right" valign="top"><a id="a1d8c2166b698e65b72d55f5b14ffe32c" name="a1d8c2166b698e65b72d55f5b14ffe32c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Hotels</b><code> [get]</code></td></tr>
+<tr class="separator:a1d8c2166b698e65b72d55f5b14ffe32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a playable game object throughout the game, which can either be a human player or a bot. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="af7c4ac7696dc2e2d837ffda3c443efb7" name="af7c4ac7696dc2e2d837ffda3c443efb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7c4ac7696dc2e2d837ffda3c443efb7">&#9670;&#160;</a></span>AddGetOutOfJailFreeCard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player.AddGetOutOfJailFreeCard </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_action_card.html">ActionCard</a></td>          <td class="paramname"><span class="paramname"><em>actionCard</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a Get Out Of <a class="el" href="class_tiles_1_1_jail.html">Jail</a> Free card to the player's collection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">actionCard</td><td>The Get Out Of <a class="el" href="class_tiles_1_1_jail.html">Jail</a> Free card to add.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a27b1dfb479ad88f091e5239186e5c881" name="a27b1dfb479ad88f091e5239186e5c881"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a27b1dfb479ad88f091e5239186e5c881">&#9670;&#160;</a></span>EndTurnDecision()</h2>
 
@@ -219,7 +273,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -242,13 +296,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
         <tr>
           <td class="memname">virtual void Player.ForSaleDecision </td>
           <td>(</td>
-          <td class="paramtype">Property</td>          <td class="paramname"><span class="paramname"><em>property</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_tiles_1_1_property.html">Property</a></td>          <td class="paramname"><span class="paramname"><em>property</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -270,9 +324,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Player.GiveMoney </td>
@@ -281,11 +332,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Gives the player a specified amount of money. </p>
@@ -316,7 +362,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -345,7 +391,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -356,14 +402,36 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
 
 </div>
 </div>
+<a id="a2bcfc33662a520060a2097eca021baf9" name="a2bcfc33662a520060a2097eca021baf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bcfc33662a520060a2097eca021baf9">&#9670;&#160;</a></span>SetNewTileIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player.SetNewTileIndex </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>newTileIndex</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the new tile index for the player, ensuring it wraps around the board if necessary. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newTileIndex</td><td>The new tile index to set.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a0997c43b7669d5a4b0a15b8f71073c99" name="a0997c43b7669d5a4b0a15b8f71073c99"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0997c43b7669d5a4b0a15b8f71073c99">&#9670;&#160;</a></span>SetSprite()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Player.SetSprite </td>
@@ -372,11 +440,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Sets the sprite for the player game object. </p>
@@ -389,14 +452,36 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
 
 </div>
 </div>
+<a id="a1226d8168ab1a672bf381f190483638e" name="a1226d8168ab1a672bf381f190483638e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1226d8168ab1a672bf381f190483638e">&#9670;&#160;</a></span>ShiftTileIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player.ShiftTileIndex </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>offset</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the newTileIndex depending on the offset from the currentTileIndex, e.g. offset of -3 sets newTileIndex back 3 spaces. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offset</td><td>The number of spaces +- from the currentTileIndex </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aeb70c057f576632910267908aeaa0c95" name="aeb70c057f576632910267908aeaa0c95"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeb70c057f576632910267908aeaa0c95">&#9670;&#160;</a></span>TakeMoney()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Player.TakeMoney </td>
@@ -405,11 +490,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Takes a specified amount of money from the player. </p>
@@ -423,7 +503,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>DiceRoll</b><code> [ge
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Assets/Scripts/<b>Player.cs</b></li>
+<li>PropertyTycoon/Assets/Scripts/<b>Player.cs</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
