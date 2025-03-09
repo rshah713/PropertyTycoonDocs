@@ -109,6 +109,9 @@ $(function(){initNavTree('class_data_reader.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">DataReader Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Reads and initialises board and card data into the game from editable CSV files.  
+ <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -123,27 +126,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadCardData</b> ()</
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a9aded7e5332c05ae2d4b915330d9c53f" id="r_a9aded7e5332c05ae2d4b915330d9c53f"><td class="memItemLeft" align="right" valign="top"><a id="a9aded7e5332c05ae2d4b915330d9c53f" name="a9aded7e5332c05ae2d4b915330d9c53f"></a>
-List&lt; Tile &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Tiles</b><code> [get]</code></td></tr>
+List&lt; <a class="el" href="class_tiles_1_1_tile.html">Tile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Tiles</b><code> [get]</code></td></tr>
 <tr class="separator:a9aded7e5332c05ae2d4b915330d9c53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52794356410423379feb8ef67ddf9d08" id="r_a52794356410423379feb8ef67ddf9d08"><td class="memItemLeft" align="right" valign="top"><a id="a52794356410423379feb8ef67ddf9d08" name="a52794356410423379feb8ef67ddf9d08"></a>
-List&lt; Property &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Properties</b><code> [get]</code></td></tr>
+List&lt; <a class="el" href="class_tiles_1_1_property.html">Property</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Properties</b><code> [get]</code></td></tr>
 <tr class="separator:a52794356410423379feb8ef67ddf9d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca5f2bbcb3625f1466886b11f1e3be9c" id="r_aca5f2bbcb3625f1466886b11f1e3be9c"><td class="memItemLeft" align="right" valign="top"><a id="aca5f2bbcb3625f1466886b11f1e3be9c" name="aca5f2bbcb3625f1466886b11f1e3be9c"></a>
-Dictionary&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OpportunityKnocksCards</b><code> [get]</code></td></tr>
-<tr class="separator:aca5f2bbcb3625f1466886b11f1e3be9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafe8fe09635c5119b4ec7eb67bf69eb4" id="r_aafe8fe09635c5119b4ec7eb67bf69eb4"><td class="memItemLeft" align="right" valign="top"><a id="aafe8fe09635c5119b4ec7eb67bf69eb4" name="aafe8fe09635c5119b4ec7eb67bf69eb4"></a>
-Dictionary&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PotLuckCards</b><code> [get]</code></td></tr>
-<tr class="separator:aafe8fe09635c5119b4ec7eb67bf69eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74dd842aa35943600ce48c8c4f85c98e" id="r_a74dd842aa35943600ce48c8c4f85c98e"><td class="memItemLeft" align="right" valign="top"><a id="a74dd842aa35943600ce48c8c4f85c98e" name="a74dd842aa35943600ce48c8c4f85c98e"></a>
+Queue&lt; <a class="el" href="class_action_card.html">ActionCard</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PotLuckCards</b><code> [get]</code></td></tr>
+<tr class="separator:a74dd842aa35943600ce48c8c4f85c98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9eb46ce0bce45780c6d67826eae782f" id="r_ae9eb46ce0bce45780c6d67826eae782f"><td class="memItemLeft" align="right" valign="top"><a id="ae9eb46ce0bce45780c6d67826eae782f" name="ae9eb46ce0bce45780c6d67826eae782f"></a>
+Queue&lt; <a class="el" href="class_action_card.html">ActionCard</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OpportunityKnocksCards</b><code> [get]</code></td></tr>
+<tr class="separator:ae9eb46ce0bce45780c6d67826eae782f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Reads and initialises board and card data into the game from editable CSV files. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2baa23939d2d86ba585bec1e235ba557" name="a2baa23939d2d86ba585bec1e235ba557"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2baa23939d2d86ba585bec1e235ba557">&#9670;&#160;</a></span>ReadBoardData()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void DataReader.ReadBoardData </td>
@@ -152,11 +154,6 @@ Dictionary&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bo
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Reads the board data from a CSV file and sets up the board tiles. </p>
@@ -170,7 +167,7 @@ Dictionary&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bo
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Assets/Scripts/<b>DataReader.cs</b></li>
+<li>PropertyTycoon/Assets/Scripts/<b>DataReader.cs</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

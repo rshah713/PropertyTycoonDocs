@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uimanager_0',['UIManager',['../class_u_i_manager.html',1,'']]]
+  ['jail_0',['Jail',['../class_tiles_1_1_jail.html',1,'Tiles']]]
 ];

@@ -105,6 +105,7 @@ $(function(){initNavTree('class_u_i_manager.html',''); initResizable(true); });
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#properties">Properties</a> &#124;
 <a href="class_u_i_manager-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">UIManager Class Reference</div></div>
 </div><!--header-->
@@ -134,7 +135,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowEndTurnPrompt</b>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>HideEndTurnPrompt</b> ()</td></tr>
 <tr class="separator:a2bb0c0b2b8d205ce60be679859a9e802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33e643b1b0d35fe79308af6bc3ade2a5" id="r_a33e643b1b0d35fe79308af6bc3ade2a5"><td class="memItemLeft" align="right" valign="top"><a id="a33e643b1b0d35fe79308af6bc3ade2a5" name="a33e643b1b0d35fe79308af6bc3ade2a5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowForSalePrompt</b> (bool buyButtonEnabled, bool auctionButtonEnabled, Property property)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowForSalePrompt</b> (bool buyButtonEnabled, bool auctionButtonEnabled, <a class="el" href="class_tiles_1_1_property.html">Property</a> property)</td></tr>
 <tr class="separator:a33e643b1b0d35fe79308af6bc3ade2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2ea8a4b9a012ac3092984787e3b52e0" id="r_aa2ea8a4b9a012ac3092984787e3b52e0"><td class="memItemLeft" align="right" valign="top"><a id="aa2ea8a4b9a012ac3092984787e3b52e0" name="aa2ea8a4b9a012ac3092984787e3b52e0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>HideForSalePrompt</b> ()</td></tr>
@@ -151,6 +152,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowInJailPrompt</b> 
 <tr class="memitem:a2c8c5d93fdef9d460066cf6cbb5bd5b4" id="r_a2c8c5d93fdef9d460066cf6cbb5bd5b4"><td class="memItemLeft" align="right" valign="top"><a id="a2c8c5d93fdef9d460066cf6cbb5bd5b4" name="a2c8c5d93fdef9d460066cf6cbb5bd5b4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>HideInJailPrompt</b> ()</td></tr>
 <tr class="separator:a2c8c5d93fdef9d460066cf6cbb5bd5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11e1044e60e968a3925fddb9eceb0fc" id="r_aa11e1044e60e968a3925fddb9eceb0fc"><td class="memItemLeft" align="right" valign="top"><a id="aa11e1044e60e968a3925fddb9eceb0fc" name="aa11e1044e60e968a3925fddb9eceb0fc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowPayRentPopup</b> (int rent, string ownedByName, Sprite ownedBySprite)</td></tr>
+<tr class="separator:aa11e1044e60e968a3925fddb9eceb0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721c24902b1dfb129d10cb380ca1103a" id="r_a721c24902b1dfb129d10cb380ca1103a"><td class="memItemLeft" align="right" valign="top"><a id="a721c24902b1dfb129d10cb380ca1103a" name="a721c24902b1dfb129d10cb380ca1103a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>HidePayRentPopup</b> ()</td></tr>
+<tr class="separator:a721c24902b1dfb129d10cb380ca1103a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c9aab1026b4dab8d3a6e6a5d816361b" id="r_a8c9aab1026b4dab8d3a6e6a5d816361b"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c9aab1026b4dab8d3a6e6a5d816361b">GetInfoPanel</a> ()</td></tr>
 <tr class="memdesc:a8c9aab1026b4dab8d3a6e6a5d816361b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next available UI panel and makes it visible.  <br /></td></tr>
 <tr class="separator:a8c9aab1026b4dab8d3a6e6a5d816361b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,9 +167,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>HideInJailPrompt</b> 
 <tr class="memitem:a07655caa8c4ae3a87307ae2792d2d499" id="r_a07655caa8c4ae3a87307ae2792d2d499"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07655caa8c4ae3a87307ae2792d2d499">AnimateDiceRoll</a> (int diceRoll1, int diceRoll2)</td></tr>
 <tr class="memdesc:a07655caa8c4ae3a87307ae2792d2d499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Animates the dice roll and sets the final sprite to the dice roll values.  <br /></td></tr>
 <tr class="separator:a07655caa8c4ae3a87307ae2792d2d499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae41cdc35274daddd7cf3edeba3f68232" id="r_ae41cdc35274daddd7cf3edeba3f68232"><td class="memItemLeft" align="right" valign="top"><a id="ae41cdc35274daddd7cf3edeba3f68232" name="ae41cdc35274daddd7cf3edeba3f68232"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AnimateMoney</b> (TMP_Text money, int newValue)</td></tr>
+<tr class="separator:ae41cdc35274daddd7cf3edeba3f68232"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:ab2d5ae9fdfae774cf05a5d7aaaa2f6c2" id="r_ab2d5ae9fdfae774cf05a5d7aaaa2f6c2"><td class="memItemLeft" align="right" valign="top"><a id="ab2d5ae9fdfae774cf05a5d7aaaa2f6c2" name="ab2d5ae9fdfae774cf05a5d7aaaa2f6c2"></a>
+GameObject[]&#160;</td><td class="memItemRight" valign="bottom"><b>playerInfoPanels</b></td></tr>
+<tr class="separator:ab2d5ae9fdfae774cf05a5d7aaaa2f6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07d059dfa275cb3b9a69e38211f859f8" id="r_a07d059dfa275cb3b9a69e38211f859f8"><td class="memItemLeft" align="right" valign="top"><a id="a07d059dfa275cb3b9a69e38211f859f8" name="a07d059dfa275cb3b9a69e38211f859f8"></a>
 Button&#160;</td><td class="memItemRight" valign="bottom"><b>rollDiceButton</b></td></tr>
 <tr class="separator:a07d059dfa275cb3b9a69e38211f859f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,6 +197,15 @@ Button&#160;</td><td class="memItemRight" valign="bottom"><b>getOutOfJailFreeBut
 <tr class="memitem:ae3e86b68d978c9dc202cab33e6d7ec52" id="r_ae3e86b68d978c9dc202cab33e6d7ec52"><td class="memItemLeft" align="right" valign="top"><a id="ae3e86b68d978c9dc202cab33e6d7ec52" name="ae3e86b68d978c9dc202cab33e6d7ec52"></a>
 Button&#160;</td><td class="memItemRight" valign="bottom"><b>remainInJailButton</b></td></tr>
 <tr class="separator:ae3e86b68d978c9dc202cab33e6d7ec52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:af88e8c9c2ab3a275816c64d032c09aec" id="r_af88e8c9c2ab3a275816c64d032c09aec"><td class="memItemLeft" align="right" valign="top"><a id="af88e8c9c2ab3a275816c64d032c09aec" name="af88e8c9c2ab3a275816c64d032c09aec"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>BankInfoPanel</b><code> [get]</code></td></tr>
+<tr class="separator:af88e8c9c2ab3a275816c64d032c09aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a688513c78fde8009174652657d22933d" id="r_a688513c78fde8009174652657d22933d"><td class="memItemLeft" align="right" valign="top"><a id="a688513c78fde8009174652657d22933d" name="a688513c78fde8009174652657d22933d"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>FreeParkingInfoPanel</b><code> [get]</code></td></tr>
+<tr class="separator:a688513c78fde8009174652657d22933d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages the UI elements and interactions in the game. </p>
@@ -193,9 +215,6 @@ Button&#160;</td><td class="memItemRight" valign="bottom"><b>remainInJailButton<
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">IEnumerator UIManager.AnimateDiceRoll </td>
@@ -208,11 +227,6 @@ Button&#160;</td><td class="memItemRight" valign="bottom"><b>remainInJailButton<
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>diceRoll2</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Animates the dice roll and sets the final sprite to the dice roll values. </p>
@@ -231,9 +245,6 @@ Button&#160;</td><td class="memItemRight" valign="bottom"><b>remainInJailButton<
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">GameObject UIManager.GetInfoPanel </td>
@@ -242,11 +253,6 @@ Button&#160;</td><td class="memItemRight" valign="bottom"><b>remainInJailButton<
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Returns the next available UI panel and makes it visible. </p>
@@ -259,9 +265,6 @@ Button&#160;</td><td class="memItemRight" valign="bottom"><b>remainInJailButton<
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void UIManager.SetActivePlayerInfo </td>
@@ -274,11 +277,6 @@ Button&#160;</td><td class="memItemRight" valign="bottom"><b>remainInJailButton<
           <td class="paramtype">Sprite</td>          <td class="paramname"><span class="paramname"><em>sprite</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Sets the active player's information in the UI. </p>
@@ -293,7 +291,7 @@ Button&#160;</td><td class="memItemRight" valign="bottom"><b>remainInJailButton<
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Assets/Scripts/<b>UIManager.cs</b></li>
+<li>PropertyTycoon/Assets/Scripts/<b>UIManager.cs</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

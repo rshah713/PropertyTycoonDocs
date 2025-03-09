@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['uimanager_0',['UIManager',['../class_u_i_manager.html',1,'']]]
+  ['player_0',['Player',['../class_player.html',1,'']]],
+  ['property_1',['Property',['../class_tiles_1_1_property.html',1,'Tiles']]]
 ];
