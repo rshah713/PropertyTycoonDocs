@@ -1,12 +1,12 @@
 var hierarchy =
 [
     [ "ActionCard", "class_action_card.html", null ],
-    [ "Bank", "class_bank.html", null ],
     [ "DataReader", "class_data_reader.html", null ],
     [ "MenuPlayer", "class_menu_player.html", null ],
     [ "MonoBehaviour", null, [
       [ "Player", "class_player.html", [
-        [ "Bot", "class_bot.html", null ]
+        [ "Bot", "class_bot.html", null ],
+        [ "SmartBot", "class_smart_bot.html", null ]
       ] ],
       [ "Tiles.Tile", "class_tiles_1_1_tile.html", [
         [ "Tiles.Action", "class_tiles_1_1_action.html", null ],

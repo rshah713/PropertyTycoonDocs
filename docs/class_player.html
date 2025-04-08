@@ -106,6 +106,8 @@ $(function(){initNavTree('class_player.html',''); initResizable(true); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="class_player-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Player Class Reference</div></div>
@@ -121,6 +123,7 @@ Inheritance diagram for Player:</div>
   <img src="class_player.png" usemap="#Player_map" alt=""/>
   <map id="Player_map" name="Player_map">
 <area href="class_bot.html" title="AI Agent inherited from player class. Makes its own moves and decisions." alt="Bot" shape="rect" coords="0,112,102,136"/>
+<area href="class_smart_bot.html" alt="SmartBot" shape="rect" coords="112,112,214,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -138,15 +141,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>StartTurn</b> ()</td>
 <tr class="separator:a2bcfc33662a520060a2097eca021baf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82d2dbe046e71ed4b116e1eb01c5f36c" id="r_a82d2dbe046e71ed4b116e1eb01c5f36c"><td class="memItemLeft" align="right" valign="top"><a id="a82d2dbe046e71ed4b116e1eb01c5f36c" name="a82d2dbe046e71ed4b116e1eb01c5f36c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CompleteTurn</b> ()</td></tr>
-<tr class="memdesc:a82d2dbe046e71ed4b116e1eb01c5f36c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once tile functionality is complete and either ends the turn or allows for another turn. <br /></td></tr>
+<tr class="memdesc:a82d2dbe046e71ed4b116e1eb01c5f36c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once tile functionality is complete and either ends the turn or allows for another turn, ensuring player has positive money. <br /></td></tr>
 <tr class="separator:a82d2dbe046e71ed4b116e1eb01c5f36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a8fa05dc2be88786b39140c3cfc8384" id="r_a0a8fa05dc2be88786b39140c3cfc8384"><td class="memItemLeft" align="right" valign="top"><a id="a0a8fa05dc2be88786b39140c3cfc8384" name="a0a8fa05dc2be88786b39140c3cfc8384"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GoToJail</b> (bool showPopup)</td></tr>
-<tr class="memdesc:a0a8fa05dc2be88786b39140c3cfc8384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the player to the <a class="el" href="class_tiles_1_1_jail.html">Jail</a> position and ends their turn. <br /></td></tr>
-<tr class="separator:a0a8fa05dc2be88786b39140c3cfc8384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0174c8c1a84172677a86a0ae9dd0d3c" id="r_ae0174c8c1a84172677a86a0ae9dd0d3c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0174c8c1a84172677a86a0ae9dd0d3c">ForSaleDecision</a> (<a class="el" href="class_tiles_1_1_property.html">Property</a> property)</td></tr>
-<tr class="memdesc:ae0174c8c1a84172677a86a0ae9dd0d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decision point for purchasing a property, shows for sale prompt and disables buttons accordingly.  <br /></td></tr>
+<tr class="memdesc:ae0174c8c1a84172677a86a0ae9dd0d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows for sale prompt to player or manually decides action if bot.  <br /></td></tr>
 <tr class="separator:ae0174c8c1a84172677a86a0ae9dd0d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ebafca5548e85ecc4cdc017fa7e712e" id="r_a1ebafca5548e85ecc4cdc017fa7e712e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ebafca5548e85ecc4cdc017fa7e712e">BidDecision</a> ()</td></tr>
+<tr class="memdesc:a1ebafca5548e85ecc4cdc017fa7e712e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets this player as the current bidder and gives player button choices.  <br /></td></tr>
+<tr class="separator:a1ebafca5548e85ecc4cdc017fa7e712e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9251e0dadbd7c719ada9868171df252" id="r_ab9251e0dadbd7c719ada9868171df252"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9251e0dadbd7c719ada9868171df252">WinAuction</a> (<a class="el" href="class_tiles_1_1_property.html">Property</a> property, int price)</td></tr>
+<tr class="memdesc:ab9251e0dadbd7c719ada9868171df252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives the player the property that was auctioned for the auction price and gives them the title deed card.  <br /></td></tr>
+<tr class="separator:ab9251e0dadbd7c719ada9868171df252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dfdd032abf083ff9ecebc859785a0bf" id="r_a4dfdd032abf083ff9ecebc859785a0bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dfdd032abf083ff9ecebc859785a0bf">GiveMoney</a> (int amount)</td></tr>
 <tr class="memdesc:a4dfdd032abf083ff9ecebc859785a0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives the player a specified amount of money.  <br /></td></tr>
 <tr class="separator:a4dfdd032abf083ff9ecebc859785a0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,9 +161,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GoToJail</b> (bool sh
 <tr class="memitem:af7c4ac7696dc2e2d837ffda3c443efb7" id="r_af7c4ac7696dc2e2d837ffda3c443efb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7c4ac7696dc2e2d837ffda3c443efb7">AddGetOutOfJailFreeCard</a> (<a class="el" href="class_action_card.html">ActionCard</a> actionCard)</td></tr>
 <tr class="memdesc:af7c4ac7696dc2e2d837ffda3c443efb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a Get Out Of <a class="el" href="class_tiles_1_1_jail.html">Jail</a> Free card to the player's collection.  <br /></td></tr>
 <tr class="separator:af7c4ac7696dc2e2d837ffda3c443efb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc4e131d06e15be5747ee311351f06d6" id="r_abc4e131d06e15be5747ee311351f06d6"><td class="memItemLeft" align="right" valign="top"><a id="abc4e131d06e15be5747ee311351f06d6" name="abc4e131d06e15be5747ee311351f06d6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TakeTitleDeed</b> (<a class="el" href="class_tiles_1_1_property.html">Property</a> property)</td></tr>
+<tr class="separator:abc4e131d06e15be5747ee311351f06d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0997c43b7669d5a4b0a15b8f71073c99" id="r_a0997c43b7669d5a4b0a15b8f71073c99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0997c43b7669d5a4b0a15b8f71073c99">SetSprite</a> (Sprite sprite)</td></tr>
 <tr class="memdesc:a0997c43b7669d5a4b0a15b8f71073c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the sprite for the player game object.  <br /></td></tr>
 <tr class="separator:a0997c43b7669d5a4b0a15b8f71073c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62788b21c2282b02e06243f82e801c1c" id="r_a62788b21c2282b02e06243f82e801c1c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62788b21c2282b02e06243f82e801c1c">GetCurrentTileIndex</a> ()</td></tr>
+<tr class="memdesc:a62788b21c2282b02e06243f82e801c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current tile index of the player. This method is primarily used for unit testing to verify player position on the board and movement logic.  <br /></td></tr>
+<tr class="separator:a62788b21c2282b02e06243f82e801c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -169,21 +180,17 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>moveTest</b></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ac91422d9704dd40c598c90035bbd5389" id="r_ac91422d9704dd40c598c90035bbd5389"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac91422d9704dd40c598c90035bbd5389">RollDiceDecision</a> ()</td></tr>
-<tr class="memdesc:ac91422d9704dd40c598c90035bbd5389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decision point for rolling dice.  <br /></td></tr>
+<tr class="memdesc:ac91422d9704dd40c598c90035bbd5389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows prompt to payer or manually rolls if bot.  <br /></td></tr>
 <tr class="separator:ac91422d9704dd40c598c90035bbd5389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69f7dc8eac8cb6c3e011709bd27c6364" id="r_a69f7dc8eac8cb6c3e011709bd27c6364"><td class="memItemLeft" align="right" valign="top"><a id="a69f7dc8eac8cb6c3e011709bd27c6364" name="a69f7dc8eac8cb6c3e011709bd27c6364"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnRollDice</b> ()</td></tr>
-<tr class="memdesc:a69f7dc8eac8cb6c3e011709bd27c6364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the rolling of dice and the action to take depending on the dice roll. <br /></td></tr>
-<tr class="separator:a69f7dc8eac8cb6c3e011709bd27c6364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27b1dfb479ad88f091e5239186e5c881" id="r_a27b1dfb479ad88f091e5239186e5c881"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27b1dfb479ad88f091e5239186e5c881">EndTurnDecision</a> ()</td></tr>
-<tr class="memdesc:a27b1dfb479ad88f091e5239186e5c881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decision point for ending turn.  <br /></td></tr>
+<tr class="memdesc:a27b1dfb479ad88f091e5239186e5c881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows prompts to player or manually decides action if bot.  <br /></td></tr>
 <tr class="separator:a27b1dfb479ad88f091e5239186e5c881"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9568f322649bd430f1bcb238e134aec7" id="r_a9568f322649bd430f1bcb238e134aec7"><td class="memItemLeft" align="right" valign="top"><a id="a9568f322649bd430f1bcb238e134aec7" name="a9568f322649bd430f1bcb238e134aec7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEndTurn</b> ()</td></tr>
 <tr class="memdesc:a9568f322649bd430f1bcb238e134aec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the player's turn ending and signaling the board to end the turn. <br /></td></tr>
 <tr class="separator:a9568f322649bd430f1bcb238e134aec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00e50369e1e1f18f0e028092a392e512" id="r_a00e50369e1e1f18f0e028092a392e512"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00e50369e1e1f18f0e028092a392e512">InJailDecision</a> ()</td></tr>
-<tr class="memdesc:a00e50369e1e1f18f0e028092a392e512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decision point for in jail, shows jail prompt and disables buttons accordingly.  <br /></td></tr>
+<tr class="memdesc:a00e50369e1e1f18f0e028092a392e512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows prompt to player or manually decides action if bot.  <br /></td></tr>
 <tr class="separator:a00e50369e1e1f18f0e028092a392e512"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87d89e8721bdc923e2510badc3986623" id="r_a87d89e8721bdc923e2510badc3986623"><td class="memItemLeft" align="right" valign="top"><a id="a87d89e8721bdc923e2510badc3986623" name="a87d89e8721bdc923e2510badc3986623"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPostBail</b> ()</td></tr>
@@ -199,12 +206,51 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnRemainInJail</b> ()
 <tr class="separator:ab8d60ca06a18288ccbda2877ab9715c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a961e6107712008c05f3b2db76d4f3dbc" id="r_a961e6107712008c05f3b2db76d4f3dbc"><td class="memItemLeft" align="right" valign="top"><a id="a961e6107712008c05f3b2db76d4f3dbc" name="a961e6107712008c05f3b2db76d4f3dbc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnBuy</b> ()</td></tr>
-<tr class="memdesc:a961e6107712008c05f3b2db76d4f3dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buys the property that the player is currently on. <br /></td></tr>
+<tr class="memdesc:a961e6107712008c05f3b2db76d4f3dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buys the property that the player is currently on and gives the player the title deed card. <br /></td></tr>
 <tr class="separator:a961e6107712008c05f3b2db76d4f3dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af13953c513eea14faf251280818042f5" id="r_af13953c513eea14faf251280818042f5"><td class="memItemLeft" align="right" valign="top"><a id="af13953c513eea14faf251280818042f5" name="af13953c513eea14faf251280818042f5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAuction</b> ()</td></tr>
 <tr class="memdesc:af13953c513eea14faf251280818042f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auctions the property that the player is currently on. <br /></td></tr>
 <tr class="separator:af13953c513eea14faf251280818042f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba6b65882a1d31df5c6ab48b655f753" id="r_a9ba6b65882a1d31df5c6ab48b655f753"><td class="memItemLeft" align="right" valign="top"><a id="a9ba6b65882a1d31df5c6ab48b655f753" name="a9ba6b65882a1d31df5c6ab48b655f753"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnBid</b> ()</td></tr>
+<tr class="separator:a9ba6b65882a1d31df5c6ab48b655f753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab85a730e9ca2e53375b92750a5daa592" id="r_ab85a730e9ca2e53375b92750a5daa592"><td class="memItemLeft" align="right" valign="top"><a id="ab85a730e9ca2e53375b92750a5daa592" name="ab85a730e9ca2e53375b92750a5daa592"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnFold</b> ()</td></tr>
+<tr class="separator:ab85a730e9ca2e53375b92750a5daa592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a6a30af594e2933b35983b6f57999a2" id="r_a6a6a30af594e2933b35983b6f57999a2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a6a30af594e2933b35983b6f57999a2">RaiseFundsDecision</a> ()</td></tr>
+<tr class="memdesc:a6a6a30af594e2933b35983b6f57999a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows prompt to player or manually raises funds if bot.  <br /></td></tr>
+<tr class="separator:a6a6a30af594e2933b35983b6f57999a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf8e675e3e740a7a35e65587efd41a9" id="r_a4bf8e675e3e740a7a35e65587efd41a9"><td class="memItemLeft" align="right" valign="top"><a id="a4bf8e675e3e740a7a35e65587efd41a9" name="a4bf8e675e3e740a7a35e65587efd41a9"></a>
+List&lt; <a class="el" href="class_tiles_1_1_property.html">Property</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetMortgageableProperties</b> ()</td></tr>
+<tr class="separator:a4bf8e675e3e740a7a35e65587efd41a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1b3e6be975e3f913514c79393aef895" id="r_ac1b3e6be975e3f913514c79393aef895"><td class="memItemLeft" align="right" valign="top"><a id="ac1b3e6be975e3f913514c79393aef895" name="ac1b3e6be975e3f913514c79393aef895"></a>
+List&lt; <a class="el" href="class_tiles_1_1_property.html">Property</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetUnmortgageableProperties</b> ()</td></tr>
+<tr class="separator:ac1b3e6be975e3f913514c79393aef895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7b9870d45863c88656b3f1bd3f0beb" id="r_a9a7b9870d45863c88656b3f1bd3f0beb"><td class="memItemLeft" align="right" valign="top"><a id="a9a7b9870d45863c88656b3f1bd3f0beb" name="a9a7b9870d45863c88656b3f1bd3f0beb"></a>
+List&lt; <a class="el" href="class_tiles_1_1_property.html">Property</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSellableProperties</b> ()</td></tr>
+<tr class="separator:a9a7b9870d45863c88656b3f1bd3f0beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac64f17a1a5ff9bf0f41ebfe51932e28b" id="r_ac64f17a1a5ff9bf0f41ebfe51932e28b"><td class="memItemLeft" align="right" valign="top"><a id="ac64f17a1a5ff9bf0f41ebfe51932e28b" name="ac64f17a1a5ff9bf0f41ebfe51932e28b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanMortgage</b> ()</td></tr>
+<tr class="separator:ac64f17a1a5ff9bf0f41ebfe51932e28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab732573b970082e9dfe3cf479d4080e6" id="r_ab732573b970082e9dfe3cf479d4080e6"><td class="memItemLeft" align="right" valign="top"><a id="ab732573b970082e9dfe3cf479d4080e6" name="ab732573b970082e9dfe3cf479d4080e6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanSellProperty</b> ()</td></tr>
+<tr class="separator:ab732573b970082e9dfe3cf479d4080e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:affb5215cb8677ba6f79e9ae6b22be5c8" id="r_affb5215cb8677ba6f79e9ae6b22be5c8"><td class="memItemLeft" align="right" valign="top"><a id="affb5215cb8677ba6f79e9ae6b22be5c8" name="affb5215cb8677ba6f79e9ae6b22be5c8"></a>
+List&lt; <a class="el" href="class_action_card.html">ActionCard</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetOutOfJailFreeCards</b></td></tr>
+<tr class="separator:affb5215cb8677ba6f79e9ae6b22be5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:af6f6b52c280613416ea2be243f69e398" id="r_af6f6b52c280613416ea2be243f69e398"><td class="memItemLeft" align="right" valign="top"><a id="af6f6b52c280613416ea2be243f69e398" name="af6f6b52c280613416ea2be243f69e398"></a>
+static <a class="el" href="class_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentBidder</b></td></tr>
+<tr class="separator:af6f6b52c280613416ea2be243f69e398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf86dc2cf39eb39adcd612b88aada317" id="r_adf86dc2cf39eb39adcd612b88aada317"><td class="memItemLeft" align="right" valign="top"><a id="adf86dc2cf39eb39adcd612b88aada317" name="adf86dc2cf39eb39adcd612b88aada317"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>PostBailAmount</b> = 50</td></tr>
+<tr class="separator:adf86dc2cf39eb39adcd612b88aada317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -214,6 +260,12 @@ Sprite&#160;</td><td class="memItemRight" valign="bottom"><b>Sprite</b><code> [g
 <tr class="memitem:a8953673cf9ed34e606b67d4e7ff10d66" id="r_a8953673cf9ed34e606b67d4e7ff10d66"><td class="memItemLeft" align="right" valign="top"><a id="a8953673cf9ed34e606b67d4e7ff10d66" name="a8953673cf9ed34e606b67d4e7ff10d66"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b><code> [get, set]</code></td></tr>
 <tr class="separator:a8953673cf9ed34e606b67d4e7ff10d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a357d670fc6545bc13ade23c38867e0fa" id="r_a357d670fc6545bc13ade23c38867e0fa"><td class="memItemLeft" align="right" valign="top"><a id="a357d670fc6545bc13ade23c38867e0fa" name="a357d670fc6545bc13ade23c38867e0fa"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Money</b> = 1500<code> [get]</code></td></tr>
+<tr class="separator:a357d670fc6545bc13ade23c38867e0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26e77cfe2d17666b5b7a48fa62855c1" id="r_af26e77cfe2d17666b5b7a48fa62855c1"><td class="memItemLeft" align="right" valign="top"><a id="af26e77cfe2d17666b5b7a48fa62855c1" name="af26e77cfe2d17666b5b7a48fa62855c1"></a>
+<a class="el" href="class_tiles_1_1_property.html">Property</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>TitleDeeds</b><code> [get]</code></td></tr>
+<tr class="separator:af26e77cfe2d17666b5b7a48fa62855c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fdf89dddb14f7e63392bad73a835305" id="r_a4fdf89dddb14f7e63392bad73a835305"><td class="memItemLeft" align="right" valign="top"><a id="a4fdf89dddb14f7e63392bad73a835305" name="a4fdf89dddb14f7e63392bad73a835305"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>InJail</b><code> [get]</code></td></tr>
 <tr class="separator:a4fdf89dddb14f7e63392bad73a835305"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,6 +278,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>Houses</b><code> [get]
 <tr class="memitem:a1d8c2166b698e65b72d55f5b14ffe32c" id="r_a1d8c2166b698e65b72d55f5b14ffe32c"><td class="memItemLeft" align="right" valign="top"><a id="a1d8c2166b698e65b72d55f5b14ffe32c" name="a1d8c2166b698e65b72d55f5b14ffe32c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>Hotels</b><code> [get]</code></td></tr>
 <tr class="separator:a1d8c2166b698e65b72d55f5b14ffe32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70b0a2a7aa2d96da6df2626edfd704df" id="r_a70b0a2a7aa2d96da6df2626edfd704df"><td class="memItemLeft" align="right" valign="top"><a id="a70b0a2a7aa2d96da6df2626edfd704df" name="a70b0a2a7aa2d96da6df2626edfd704df"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>PassedGo</b> = true<code> [get]</code></td></tr>
+<tr class="separator:a70b0a2a7aa2d96da6df2626edfd704df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a playable game object throughout the game, which can either be a human player or a bot. </p>
@@ -255,6 +310,35 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>Hotels</b><code> [get]
 
 </div>
 </div>
+<a id="a1ebafca5548e85ecc4cdc017fa7e712e" name="a1ebafca5548e85ecc4cdc017fa7e712e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ebafca5548e85ecc4cdc017fa7e712e">&#9670;&#160;</a></span>BidDecision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Player.BidDecision </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets this player as the current bidder and gives player button choices. </p>
+
+<p>Reimplemented in <a class="el" href="class_bot.html#a12ddedad083f8655a78c371da6127f64">Bot</a>, and <a class="el" href="class_smart_bot.html#a0234b8abd7bb07d805cb0b85aeca38f3">SmartBot</a>.</p>
+
+</div>
+</div>
 <a id="a27b1dfb479ad88f091e5239186e5c881" name="a27b1dfb479ad88f091e5239186e5c881"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a27b1dfb479ad88f091e5239186e5c881">&#9670;&#160;</a></span>EndTurnDecision()</h2>
 
@@ -278,9 +362,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>Hotels</b><code> [get]
 </table>
 </div><div class="memdoc">
 
-<p>Decision point for ending turn. </p>
+<p>Shows prompts to player or manually decides action if bot. </p>
 
-<p>Reimplemented in <a class="el" href="class_bot.html#a64e896d462f9828237e0c3f9c7dcb1b0">Bot</a>.</p>
+<p>Reimplemented in <a class="el" href="class_bot.html#a64e896d462f9828237e0c3f9c7dcb1b0">Bot</a>, and <a class="el" href="class_smart_bot.html#a65b1ded47d4cb4e5cfc3e7a69fa3b672">SmartBot</a>.</p>
 
 </div>
 </div>
@@ -307,15 +391,35 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>Hotels</b><code> [get]
 </table>
 </div><div class="memdoc">
 
-<p>Decision point for purchasing a property, shows for sale prompt and disables buttons accordingly. </p>
+<p>Shows for sale prompt to player or manually decides action if bot. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">property</td><td></td></tr>
+    <tr><td class="paramname">property</td><td>The property the player landed on</td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="class_bot.html#a8bae3bee44f0f9f21c74eac4ae62df51">Bot</a>.</p>
+<p>Reimplemented in <a class="el" href="class_bot.html#a8bae3bee44f0f9f21c74eac4ae62df51">Bot</a>, and <a class="el" href="class_smart_bot.html#a02b97804e8e41310c9a0f612df3d29e9">SmartBot</a>.</p>
+
+</div>
+</div>
+<a id="a62788b21c2282b02e06243f82e801c1c" name="a62788b21c2282b02e06243f82e801c1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62788b21c2282b02e06243f82e801c1c">&#9670;&#160;</a></span>GetCurrentTileIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player.GetCurrentTileIndex </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the current tile index of the player. This method is primarily used for unit testing to verify player position on the board and movement logic. </p>
+<dl class="section return"><dt>Returns</dt><dd>The index of the tile the player is currently on</dd></dl>
 
 </div>
 </div>
@@ -367,9 +471,38 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>Hotels</b><code> [get]
 </table>
 </div><div class="memdoc">
 
-<p>Decision point for in jail, shows jail prompt and disables buttons accordingly. </p>
+<p>Shows prompt to player or manually decides action if bot. </p>
 
-<p>Reimplemented in <a class="el" href="class_bot.html#af023f860f23bb3569b053a49c1e61bbf">Bot</a>.</p>
+<p>Reimplemented in <a class="el" href="class_bot.html#af023f860f23bb3569b053a49c1e61bbf">Bot</a>, and <a class="el" href="class_smart_bot.html#a4610d75a44542cd64500874c5d3a556c">SmartBot</a>.</p>
+
+</div>
+</div>
+<a id="a6a6a30af594e2933b35983b6f57999a2" name="a6a6a30af594e2933b35983b6f57999a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a6a30af594e2933b35983b6f57999a2">&#9670;&#160;</a></span>RaiseFundsDecision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Player.RaiseFundsDecision </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shows prompt to player or manually raises funds if bot. </p>
+
+<p>Reimplemented in <a class="el" href="class_bot.html#a56891ce1e669542799f3ff80f648815a">Bot</a>, and <a class="el" href="class_smart_bot.html#a9611cde5e973f4d4e8276843724f107d">SmartBot</a>.</p>
 
 </div>
 </div>
@@ -396,9 +529,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>Hotels</b><code> [get]
 </table>
 </div><div class="memdoc">
 
-<p>Decision point for rolling dice. </p>
+<p>Shows prompt to payer or manually rolls if bot. </p>
 
-<p>Reimplemented in <a class="el" href="class_bot.html#ac03e78a8a904d865bd3e9073ebfcac28">Bot</a>.</p>
+<p>Reimplemented in <a class="el" href="class_bot.html#ac03e78a8a904d865bd3e9073ebfcac28">Bot</a>, and <a class="el" href="class_smart_bot.html#ae050906bda1004eac2182e9e321171bc">SmartBot</a>.</p>
 
 </div>
 </div>
@@ -496,6 +629,36 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>Hotels</b><code> [get]
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">amount</td><td>The amount of money to take from the player.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab9251e0dadbd7c719ada9868171df252" name="ab9251e0dadbd7c719ada9868171df252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9251e0dadbd7c719ada9868171df252">&#9670;&#160;</a></span>WinAuction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player.WinAuction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tiles_1_1_property.html">Property</a></td>          <td class="paramname"><span class="paramname"><em>property</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>price</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gives the player the property that was auctioned for the auction price and gives them the title deed card. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">property</td><td>The auctioned property</td></tr>
+    <tr><td class="paramname">price</td><td>The auction price</td></tr>
   </table>
   </dd>
 </dl>

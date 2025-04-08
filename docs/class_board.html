@@ -125,9 +125,29 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>EndTurn</b> ()</td></tr>
 <tr class="memdesc:a01c389b01107f7aaa5cf1270e65cda3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends the current players turn and starts the next players turn. <br /></td></tr>
 <tr class="separator:a01c389b01107f7aaa5cf1270e65cda3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23375b42e0ca2755af42d6903cf2f490" id="r_a23375b42e0ca2755af42d6903cf2f490"><td class="memItemLeft" align="right" valign="top"><a id="a23375b42e0ca2755af42d6903cf2f490" name="a23375b42e0ca2755af42d6903cf2f490"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemovePlayer</b> ()</td></tr>
+<tr class="memdesc:a23375b42e0ca2755af42d6903cf2f490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the current player from the game because they went bankrupt and starts the next players turn. <br /></td></tr>
+<tr class="separator:a23375b42e0ca2755af42d6903cf2f490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979e692f4d260dc25cee772988c75ea8" id="r_a979e692f4d260dc25cee772988c75ea8"><td class="memItemLeft" align="right" valign="top"><a id="a979e692f4d260dc25cee772988c75ea8" name="a979e692f4d260dc25cee772988c75ea8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartAuction</b> (<a class="el" href="class_tiles_1_1_property.html">Property</a> property)</td></tr>
+<tr class="memdesc:a979e692f4d260dc25cee772988c75ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a list of all the players who can auction, and starts from the current player. <br /></td></tr>
+<tr class="separator:a979e692f4d260dc25cee772988c75ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f05449eb4e1e0bd33c55fc56395d30b" id="r_a6f05449eb4e1e0bd33c55fc56395d30b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f05449eb4e1e0bd33c55fc56395d30b">EndBid</a> (bool folded, int amount=0)</td></tr>
+<tr class="memdesc:a6f05449eb4e1e0bd33c55fc56395d30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends the current bidders turn and starts the next, removing them from the list of bidders if they chose to fold or updating the auction price if they chose to bid.  <br /></td></tr>
+<tr class="separator:a6f05449eb4e1e0bd33c55fc56395d30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5313b7fad783a03e5f40fb8eef49684b" id="r_a5313b7fad783a03e5f40fb8eef49684b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5313b7fad783a03e5f40fb8eef49684b">GetTileIndex</a> (string name)</td></tr>
 <tr class="memdesc:a5313b7fad783a03e5f40fb8eef49684b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the index of a tile by its name.  <br /></td></tr>
 <tr class="separator:a5313b7fad783a03e5f40fb8eef49684b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3449da3b39510cb19086bb287c8f7a85" id="r_a3449da3b39510cb19086bb287c8f7a85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3449da3b39510cb19086bb287c8f7a85">CanAuction</a> ()</td></tr>
+<tr class="memdesc:a3449da3b39510cb19086bb287c8f7a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if at least 2 players have passed go and are out of jail and have the minimum amount to bid.  <br /></td></tr>
+<tr class="separator:a3449da3b39510cb19086bb287c8f7a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae365a9600997cf6ec606795d17770860" id="r_ae365a9600997cf6ec606795d17770860"><td class="memItemLeft" align="right" valign="top"><a id="ae365a9600997cf6ec606795d17770860" name="ae365a9600997cf6ec606795d17770860"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GiveTitleDeed</b> (<a class="el" href="class_tiles_1_1_property.html">Property</a> property)</td></tr>
+<tr class="separator:ae365a9600997cf6ec606795d17770860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a679fabc2c69ff1b6a98b26cd85237434" id="r_a679fabc2c69ff1b6a98b26cd85237434"><td class="memItemLeft" align="right" valign="top"><a id="a679fabc2c69ff1b6a98b26cd85237434" name="a679fabc2c69ff1b6a98b26cd85237434"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TakeTitleDeed</b> (<a class="el" href="class_tiles_1_1_property.html">Property</a> property)</td></tr>
+<tr class="separator:a679fabc2c69ff1b6a98b26cd85237434"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -137,6 +157,9 @@ Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>JailPosition</b><c
 <tr class="memitem:a2a86c045a9e0d2bdafe4e7d56735184c" id="r_a2a86c045a9e0d2bdafe4e7d56735184c"><td class="memItemLeft" align="right" valign="top"><a id="a2a86c045a9e0d2bdafe4e7d56735184c" name="a2a86c045a9e0d2bdafe4e7d56735184c"></a>
 List&lt; <a class="el" href="class_tiles_1_1_tile.html">Tile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Tiles</b><code> [get]</code></td></tr>
 <tr class="separator:a2a86c045a9e0d2bdafe4e7d56735184c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9735e166d15c18572db1ddf506d19185" id="r_a9735e166d15c18572db1ddf506d19185"><td class="memItemLeft" align="right" valign="top"><a id="a9735e166d15c18572db1ddf506d19185" name="a9735e166d15c18572db1ddf506d19185"></a>
+<a class="el" href="class_tiles_1_1_property.html">Property</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>TitleDeeds</b><code> [get]</code></td></tr>
+<tr class="separator:a9735e166d15c18572db1ddf506d19185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b59e6f51cec9487ccc3398e8c530f85" id="r_a9b59e6f51cec9487ccc3398e8c530f85"><td class="memItemLeft" align="right" valign="top"><a id="a9b59e6f51cec9487ccc3398e8c530f85" name="a9b59e6f51cec9487ccc3398e8c530f85"></a>
 Queue&lt; <a class="el" href="class_action_card.html">ActionCard</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PotLuckCards</b><code> [get]</code></td></tr>
 <tr class="separator:a9b59e6f51cec9487ccc3398e8c530f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,13 +169,69 @@ Queue&lt; <a class="el" href="class_action_card.html">ActionCard</a> &gt;&#160;<
 <tr class="memitem:a955b9e9768a159c9371a28bc4fb43bb8" id="r_a955b9e9768a159c9371a28bc4fb43bb8"><td class="memItemLeft" align="right" valign="top"><a id="a955b9e9768a159c9371a28bc4fb43bb8" name="a955b9e9768a159c9371a28bc4fb43bb8"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>FreeParkingSum</b><code> [get, set]</code></td></tr>
 <tr class="separator:a955b9e9768a159c9371a28bc4fb43bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae42256b1f753dddac239ced44d391620" id="r_ae42256b1f753dddac239ced44d391620"><td class="memItemLeft" align="right" valign="top"><a id="ae42256b1f753dddac239ced44d391620" name="ae42256b1f753dddac239ced44d391620"></a>
-<a class="el" href="class_player.html">Player</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>Players</b><code> [get]</code></td></tr>
-<tr class="separator:ae42256b1f753dddac239ced44d391620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09806becbbddb3b29b2245371cfcaa1" id="r_ab09806becbbddb3b29b2245371cfcaa1"><td class="memItemLeft" align="right" valign="top"><a id="ab09806becbbddb3b29b2245371cfcaa1" name="ab09806becbbddb3b29b2245371cfcaa1"></a>
+List&lt; <a class="el" href="class_player.html">Player</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Players</b><code> [get]</code></td></tr>
+<tr class="separator:ab09806becbbddb3b29b2245371cfcaa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a358259fd8cc683f72b3a98f849b13347" id="r_a358259fd8cc683f72b3a98f849b13347"><td class="memItemLeft" align="right" valign="top"><a id="a358259fd8cc683f72b3a98f849b13347" name="a358259fd8cc683f72b3a98f849b13347"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>AuctionPrice</b><code> [get]</code></td></tr>
+<tr class="separator:a358259fd8cc683f72b3a98f849b13347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4eb585da41e9bb75dc73bc7193b33d" id="r_a8b4eb585da41e9bb75dc73bc7193b33d"><td class="memItemLeft" align="right" valign="top"><a id="a8b4eb585da41e9bb75dc73bc7193b33d" name="a8b4eb585da41e9bb75dc73bc7193b33d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>BidAmount</b><code> [get]</code></td></tr>
+<tr class="separator:a8b4eb585da41e9bb75dc73bc7193b33d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_tiles_1_1_property.html" title="Inherits from tile class, describes a purchasable tile that can be owned by a player or the bank.">Property</a> Tycoon board, acts as a game manager. Tracks board tiles, bank, cards, and players. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3449da3b39510cb19086bb287c8f7a85" name="a3449da3b39510cb19086bb287c8f7a85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3449da3b39510cb19086bb287c8f7a85">&#9670;&#160;</a></span>CanAuction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Board.CanAuction </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if at least 2 players have passed go and are out of jail and have the minimum amount to bid. </p>
+<dl class="section return"><dt>Returns</dt><dd>Whether or not auctioning is possible</dd></dl>
+
+</div>
+</div>
+<a id="a6f05449eb4e1e0bd33c55fc56395d30b" name="a6f05449eb4e1e0bd33c55fc56395d30b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f05449eb4e1e0bd33c55fc56395d30b">&#9670;&#160;</a></span>EndBid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Board.EndBid </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>folded</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>amount</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ends the current bidders turn and starts the next, removing them from the list of bidders if they chose to fold or updating the auction price if they chose to bid. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">folded</td><td>Indicates if the player chose to fold or not</td></tr>
+    <tr><td class="paramname">amount</td><td>The amount the player chose to bid</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a5313b7fad783a03e5f40fb8eef49684b" name="a5313b7fad783a03e5f40fb8eef49684b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5313b7fad783a03e5f40fb8eef49684b">&#9670;&#160;</a></span>GetTileIndex()</h2>
 

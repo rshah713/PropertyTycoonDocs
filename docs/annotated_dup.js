@@ -12,11 +12,11 @@ var annotated_dup =
       [ "Utility", "class_tiles_1_1_utility.html", "class_tiles_1_1_utility" ]
     ] ],
     [ "ActionCard", "class_action_card.html", "class_action_card" ],
-    [ "Bank", "class_bank.html", "class_bank" ],
     [ "Board", "class_board.html", "class_board" ],
     [ "Bot", "class_bot.html", "class_bot" ],
     [ "DataReader", "class_data_reader.html", "class_data_reader" ],
     [ "MenuPlayer", "class_menu_player.html", "class_menu_player" ],
     [ "Player", "class_player.html", "class_player" ],
+    [ "SmartBot", "class_smart_bot.html", "class_smart_bot" ],
     [ "UIManager", "class_u_i_manager.html", "class_u_i_manager" ]
 ];
